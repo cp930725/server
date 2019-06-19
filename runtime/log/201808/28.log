@@ -1,0 +1,251 @@
+---------------------------------------------------------------
+[ 2018-08-28T22:46:14+08:00 ] 127.0.0.1 GET /
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'kuangji'@'localhost' (using password: YES)
+---------------------------------------------------------------
+[ 2018-08-28T22:48:22+08:00 ] 127.0.0.1 GET /
+[ info ] www.demo_public.com/ [运行时间：0.076354s][吞吐率：13.10req/s] [内存消耗：1,763.48kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=bbn8kq9lgpljp9dri9moppu1k2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\demo\application\index\view\index\index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:host=127.0.0.1;dbname=demo_1204;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.014012s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000776s ]
+---------------------------------------------------------------
+[ 2018-08-28T22:48:31+08:00 ] 127.0.0.1 GET /admin
+[ info ] www.demo_public.com/admin [运行时间：0.049595s][吞吐率：20.16req/s] [内存消耗：801.23kb] [文件加载：59]
+[ info ] [ LANG ] D:\phpStudy\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=bbn8kq9lgpljp9dri9moppu1k2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T22:48:31+08:00 ] 127.0.0.1 GET /admin/login.html?from=http%3A%2F%2Fwww.demo_public.com%2Fadmin
+[ info ] www.demo_public.com/admin/login.html?from=http%3A%2F%2Fwww.demo_public.com%2Fadmin [运行时间：0.062247s][吞吐率：16.07req/s] [内存消耗：910.42kb] [文件加载：64]
+[ info ] [ LANG ] D:\phpStudy\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=bbn8kq9lgpljp9dri9moppu1k2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.demo_public.com/admin',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] D:\phpStudy\WWW\demo\application\admin\view\staff\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T22:51:10+08:00 ] 127.0.0.1 POST /admin/login.html?from=http%3A%2F%2Fwww.demo_public.com%2Fadmin
+[ info ] www.demo_public.com/admin/login.html?from=http%3A%2F%2Fwww.demo_public.com%2Fadmin [运行时间：0.041221s][吞吐率：24.26req/s] [内存消耗：795.92kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpStudy\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=bbn8kq9lgpljp9dri9moppu1k2',
+  'content-length' => '36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://www.demo_public.com/admin/login.html?from=http%3A%2F%2Fwww.demo_public.com%2Fadmin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.demo_public.com/admin',
+  'username' => 'admin',
+  'password' => '123456789789',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-28T22:51:10+08:00 ] 127.0.0.1 GET /admin.html
+[ info ] www.demo_public.com/admin.html [运行时间：0.157404s][吞吐率：6.35req/s] [内存消耗：1,836.70kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'PHPSESSID=bbn8kq9lgpljp9dri9moppu1k2',
+  'referer' => 'http://www.demo_public.com/admin/login.html?from=http%3A%2F%2Fwww.demo_public.com%2Fadmin',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0',
+  'host' => 'www.demo_public.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\demo\application\admin\view\index\index.html [ array (
+  0 => 'totalPeople',
+  1 => 'noAuthen',
+  2 => 'onAuthen',
+  3 => 'totalTrade',
+  4 => 'buyTrade',
+  5 => 'sellTrade',
+  6 => 'monthOrdersDay',
+  7 => 'monthOrdersNumber',
+  8 => 'newOrders',
+  9 => 'statuses',
+  10 => 'buyCount',
+  11 => 'sellCount',
+  12 => 'buyNumber',
+  13 => 'buyMoney',
+  14 => 'sellNumber',
+  15 => 'sellMoney',
+  16 => 'store',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001343s ] mysql:host=127.0.0.1;dbname=demo_1204;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015967s ]
+[ sql ] [ SQL ] SELECT authen, count(id) AS number FROM `account` GROUP BY `authen` [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.015848s ]
+[ sql ] [ SQL ] SELECT type, count(id) AS number FROM `trade` GROUP BY `type` [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(`create_at`, "%Y-%m-%d") AS date, COUNT(id) AS number FROM `trade` WHERE  `create_at` >= '2018-07-28' GROUP BY `date` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`username`,`p`.`nickname`,`t`.`tid`,`t`.`status`,`t`.`number`,`t`.`price` FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` ORDER BY `t`.`create_at` DESC LIMIT 5 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT type, status, COUNT(id) AS count, SUM(number) number, SUM(price * number) price FROM `trade` GROUP BY `type`,`status` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.015492s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `catalog` = 1 ORDER BY `income` DESC [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.015248s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` < `income` GROUP BY `product` [ RunTime:0.001161s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` >= `income` GROUP BY `product` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.014363s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` WHERE  `c`.`create_at` > '2018-08-28' GROUP BY `m`.`product` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` GROUP BY `m`.`product` [ RunTime:0.000791s ]

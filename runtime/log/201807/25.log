@@ -1,0 +1,1083 @@
+---------------------------------------------------------------
+[ 2018-07-25T00:24:29+08:00 ] 180.103.20.114 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T01:57:51+08:00 ] 183.0.41.72 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T01:57:55+08:00 ] 183.0.41.72 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:46:00+08:00 ] 118.27.29.161 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:46:31+08:00 ] 118.27.29.161 GET /signin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:46:39+08:00 ] 118.27.29.161 POST /signin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.046800s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333'  AND `password` = 'e67b36ddd09a671967939cfe2b0255cf' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 3 , NULL , '118.27.29.161' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.90 Safari/537.36 2345Explorer/9.4.1.17471' , '2018-07-25 03:46:39') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:46:40+08:00 ] 118.27.29.161 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 03:46:40' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:46:46+08:00 ] 118.27.29.161 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:00+08:00 ] 118.27.29.161 GET /scratch.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `event_log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `event_log` WHERE  `username` = '13333333333'  AND `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT id, type, status, reward, reward_type, update_at AS date FROM `event_log` WHERE  `username` = '13333333333'  AND `type` = 1  AND `hit` = 1 ORDER BY `update_at` DESC [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:14+08:00 ] 118.27.29.161 POST /scratch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `event_log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `event_log` WHERE  `username` = '13333333333'  AND `type` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:15+08:00 ] 118.27.29.161 GET /market.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:21+08:00 ] 118.27.29.161 POST /market/overview
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `market` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `date`,`price`,`high`,`low` FROM `market` WHERE  `date` <= '2018-07-25' ORDER BY `date` DESC LIMIT 7 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:21+08:00 ] 118.27.29.161 POST /market/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT tid AS id,`t`.`type`,`t`.`status`,p.nickname AS owner,`number`,`price`,t.update_at AS date FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` WHERE  `t`.`type` = '1'  AND `t`.`status` <> '0'  AND `t`.`status` <> '8' ORDER BY `t`.`status` ASC,`t`.`create_at` DESC LIMIT 0,100 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:36+08:00 ] 118.27.29.161 GET /store.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `status`,COUNT(id) AS count FROM `order` WHERE  `buyer` = '13333333333' GROUP BY `status` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:38+08:00 ] 118.27.29.161 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 1  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:42+08:00 ] 118.27.29.161 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 2  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:45+08:00 ] 118.27.29.161 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 4  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:45+08:00 ] 118.27.29.161 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 3  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:45+08:00 ] 118.27.29.161 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 5  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:47+08:00 ] 118.27.29.161 GET /team.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T03:47:51+08:00 ] 118.27.29.161 POST /team/member
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`a`.`type`,`a`.`username`,`p`.`nickname`,`p`.`idcard`,d.one AS count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `dashboard` `d` ON `d`.`username`=`a`.`username` WHERE  `inviter` = '13333333333' LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:36:01+08:00 ] 171.11.151.153 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:53:06+08:00 ] 106.116.181.150 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:56:53+08:00 ] 106.116.181.150 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:47:40+08:00 ] 106.116.181.150 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:47:42+08:00 ] 106.116.181.150 GET /signin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:47:49+08:00 ] 106.116.181.150 POST /signin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333'  AND `password` = 'e67b36ddd09a671967939cfe2b0255cf' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 3 , NULL , '106.116.181.150' , 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36' , '2018-07-25 11:47:49') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:47:50+08:00 ] 106.116.181.150 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 11:47:50' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:48:00+08:00 ] 106.116.181.150 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:50:42+08:00 ] 106.116.181.150 GET /signin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:50:54+08:00 ] 106.116.181.150 POST /signin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333'  AND `password` = 'e67b36ddd09a671967939cfe2b0255cf' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 3 , NULL , '106.116.181.150' , 'Mozilla/5.0 (Linux; Android 4.4.2; SM-G955F Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36' , '2018-07-25 11:50:54') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:50:55+08:00 ] 106.116.181.150 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 11:50:55' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:50:59+08:00 ] 106.116.181.150 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:58:52+08:00 ] 106.116.181.150 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:05:28+08:00 ] 171.11.151.153 GET /signin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:05:41+08:00 ] 171.11.151.153 POST /signin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333'  AND `password` = 'e67b36ddd09a671967939cfe2b0255cf' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 3 , NULL , '171.11.151.153' , 'Mozilla/5.0 (Linux; Android 8.0.0; MIX 2 Build/OPR1.170623.027; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile Safari/537.36' , '2018-07-25 12:05:40') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:05:41+08:00 ] 171.11.151.153 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 12:05:41' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:05:45+08:00 ] 171.11.151.153 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:02+08:00 ] 171.11.151.153 GET /team.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:02+08:00 ] 171.11.151.153 POST /team/member
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031200s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`a`.`type`,`a`.`username`,`p`.`nickname`,`p`.`idcard`,d.one AS count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `dashboard` `d` ON `d`.`username`=`a`.`username` WHERE  `inviter` = '13333333333' LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:04+08:00 ] 171.11.151.153 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:05+08:00 ] 171.11.151.153 GET /market.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:06+08:00 ] 171.11.151.153 POST /market/overview
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `market` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `date`,`price`,`high`,`low` FROM `market` WHERE  `date` <= '2018-07-25' ORDER BY `date` DESC LIMIT 7 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:06+08:00 ] 171.11.151.153 POST /market/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT tid AS id,`t`.`type`,`t`.`status`,p.nickname AS owner,`number`,`price`,t.update_at AS date FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` WHERE  `t`.`type` = '1'  AND `t`.`status` <> '0'  AND `t`.`status` <> '8' ORDER BY `t`.`status` ASC,`t`.`create_at` DESC LIMIT 0,100 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:07+08:00 ] 171.11.151.153 GET /store.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `status`,COUNT(id) AS count FROM `order` WHERE  `buyer` = '13333333333' GROUP BY `status` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:09+08:00 ] 171.11.151.153 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:14+08:00 ] 171.11.151.153 GET /market.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:14+08:00 ] 171.11.151.153 POST /market/overview
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `market` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `date`,`price`,`high`,`low` FROM `market` WHERE  `date` <= '2018-07-25' ORDER BY `date` DESC LIMIT 7 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:15+08:00 ] 171.11.151.153 POST /market/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT tid AS id,`t`.`type`,`t`.`status`,p.nickname AS owner,`number`,`price`,t.update_at AS date FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` WHERE  `t`.`type` = '1'  AND `t`.`status` <> '0'  AND `t`.`status` <> '8' ORDER BY `t`.`status` ASC,`t`.`create_at` DESC LIMIT 0,100 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:06:35+08:00 ] 106.116.181.150 GET /signin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:08:46+08:00 ] 106.116.181.150 POST /signin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333'  AND `password` = 'e67b36ddd09a671967939cfe2b0255cf' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 3 , NULL , '106.116.181.150' , 'Mozilla/5.0 (Linux; Android 4.4.2; SM-G955F Build/JLS36C) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36' , '2018-07-25 12:08:46') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:08:47+08:00 ] 106.116.181.150 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 12:08:47' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:08:48+08:00 ] 106.116.181.150 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:08:57+08:00 ] 106.116.181.150 GET /team.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:08:58+08:00 ] 106.116.181.150 POST /team/member
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`a`.`type`,`a`.`username`,`p`.`nickname`,`p`.`idcard`,d.one AS count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `dashboard` `d` ON `d`.`username`=`a`.`username` WHERE  `inviter` = '13333333333' LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:08:59+08:00 ] 106.116.181.150 GET /market.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:09:00+08:00 ] 106.116.181.150 POST /market/overview
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `market` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `date`,`price`,`high`,`low` FROM `market` WHERE  `date` <= '2018-07-25' ORDER BY `date` DESC LIMIT 7 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:09:00+08:00 ] 106.116.181.150 POST /market/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT tid AS id,`t`.`type`,`t`.`status`,p.nickname AS owner,`number`,`price`,t.update_at AS date FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` WHERE  `t`.`type` = '1'  AND `t`.`status` <> '0'  AND `t`.`status` <> '8' ORDER BY `t`.`status` ASC,`t`.`create_at` DESC LIMIT 0,100 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T12:09:03+08:00 ] 106.116.181.150 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T13:34:19+08:00 ] 206.189.114.234 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:46:53+08:00 ] 125.71.154.140 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:46:57+08:00 ] 125.71.154.140 GET /signin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:01+08:00 ] 125.71.154.140 GET /signup.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:01+08:00 ] 125.71.154.140 GET /service/captcha.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:06+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `username` = '17307605440' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:11+08:00 ] 125.71.154.140 GET /service/captcha.html?802090616
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:11+08:00 ] 125.71.154.140 GET /service/captcha.html?802090162
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:14+08:00 ] 125.71.154.140 POST /service/captcha
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:17+08:00 ] 125.71.154.140 POST /service/sms
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `username` = '17307605440' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sms` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `sms` WHERE  `type` = 251292  AND `status` = 1  AND `mobile` = '17307605440'  AND `create_at` > '2018-07-25 14:46:15' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `sms`  SET `status` = 0  WHERE  `mobile` = '17307605440'  AND `status` = 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] INSERT INTO `sms` (`type` , `status` , `mobile` , `data` , `ip` , `ua` , `create_at` , `update_at`) VALUES (251292 , 1 , '17307605440' , 'a:2:{i:0;i:971654;i:1;s:8:\"30分钟\";}' , '125.71.154.140' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36' , '2018-07-25 14:47:15' , '2018-07-25 14:47:15') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:29+08:00 ] 125.71.154.140 POST /service/sms_check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sms` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `sms` WHERE  `type` = 251292  AND `status` = 1  AND `mobile` = '17307605440'  AND `create_at` > '2018-07-25 14:17:29' LIMIT 1 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:31+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:31+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:31+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:31+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:32+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:32+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `uid` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:32+08:00 ] 125.71.154.140 POST /account/check
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `uid` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:43+08:00 ] 125.71.154.140 GET /signin.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:54+08:00 ] 125.71.154.140 POST /signin
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333'  AND `password` = 'e67b36ddd09a671967939cfe2b0255cf' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 3 , NULL , '125.71.154.140' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36' , '2018-07-25 14:47:54') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:54+08:00 ] 125.71.154.140 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 14:47:54' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:47:55+08:00 ] 125.71.154.140 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:03+08:00 ] 125.71.154.140 GET /funding.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:04+08:00 ] 125.71.154.140 POST /funding/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `funding` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `f`.`id`,`f`.`title`,`f`.`image`,`f`.`target`,`f`.`current`,`f`.`people`,`f`.`create_at`,`p`.`nickname`,`p`.`idcard`,`p`.`avatar` FROM `funding` `f` LEFT JOIN `profile` `p` ON `p`.`username`=`f`.`owner` WHERE  `f`.`visible` = '1'  AND `f`.`status` <> '2' ORDER BY `f`.`status` ASC,`f`.`sort` DESC,`f`.`type` DESC,`f`.`update_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:05+08:00 ] 125.71.154.140 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 14:48:05' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:06+08:00 ] 125.71.154.140 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:07+08:00 ] 125.71.154.140 GET /team.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:07+08:00 ] 125.71.154.140 POST /team/member
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`a`.`type`,`a`.`username`,`p`.`nickname`,`p`.`idcard`,d.one AS count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `dashboard` `d` ON `d`.`username`=`a`.`username` WHERE  `inviter` = '13333333333' LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:08+08:00 ] 125.71.154.140 GET /market.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:09+08:00 ] 125.71.154.140 POST /market/overview
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `market` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `date`,`price`,`high`,`low` FROM `market` WHERE  `date` <= '2018-07-25' ORDER BY `date` DESC LIMIT 7 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:09+08:00 ] 125.71.154.140 POST /market/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT tid AS id,`t`.`type`,`t`.`status`,p.nickname AS owner,`number`,`price`,t.update_at AS date FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` WHERE  `t`.`type` = '1'  AND `t`.`status` <> '0'  AND `t`.`status` <> '8' ORDER BY `t`.`status` ASC,`t`.`create_at` DESC LIMIT 0,100 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:09+08:00 ] 125.71.154.140 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:14+08:00 ] 125.71.154.140 GET /store.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `status`,COUNT(id) AS count FROM `order` WHERE  `buyer` = '13333333333' GROUP BY `status` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:14+08:00 ] 125.71.154.140 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 1  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:17+08:00 ] 125.71.154.140 GET /help.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `type` = 8 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:19+08:00 ] 125.71.154.140 GET /store.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `status`,COUNT(id) AS count FROM `order` WHERE  `buyer` = '13333333333' GROUP BY `status` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:19+08:00 ] 125.71.154.140 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 1  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:26+08:00 ] 125.71.154.140 POST /buy
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `store`  SET `stock` = stock-1 , `sales` = sales+1  WHERE  `id` = 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `uuid` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `uuid` WHERE  `id` = 'K18072570307821' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `uuid` (`id` , `type`) VALUES ('K18072570307821' , 8) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `record` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `record` (`rid` , `username` , `currency` , `business` , `before` , `now` , `after` , `create_at`) VALUES ( 'K18072570307821','13333333333',1,20,843889.73660808,-0,843889.73660808,'2018-07-25 14:48:26' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `wallet`  SET `money` = `money` + -0 , `spend` = `spend` + 0 , `update_at` = '2018-07-25 14:48:26'  WHERE  `username` = '13333333333' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `uuid` WHERE  `id` = 'S234785480' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `uuid` (`id` , `type`) VALUES ('S234785480' , 8) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`oid` , `status` , `seller` , `buyer` , `product` , `title` , `currency` , `price` , `charge` , `code` , `power` , `address` , `express` , `create_at` , `update_at`) VALUES ('S234785480' , 1 , NULL , '13333333333' , 1 , 'Lv1托管引擎' , 1 , 0 , 0 , NULL , 0 , NULL , NULL , '2018-07-25 14:48:26' , '2018-07-25 14:48:26') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `uuid` WHERE  `id` = 'D4298081' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `uuid` (`id` , `type`) VALUES ('D4298081' , 2) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `machine` (`mid` , `status` , `source` , `username` , `product` , `divide` , `name` , `cycle` , `income` , `power` , `price` , `profit` , `count` , `profit_at` , `create_at` , `update_at`) VALUES ('D4298081' , 1 , 1 , '13333333333' , 1 , 1 , 'Lv1托管引擎' , 10800 , 9 , 0 , 0 , 0 , 0 , NULL , '2018-07-25 14:48:26' , '2018-07-25 14:48:26') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `dashboard`  SET `machine_count` = machine_count+1 , `machine_power` = machine_power+0.000000000000 , `power` = power+0.000000000000 , `update_at` = '2018-07-25 14:48:26'  WHERE  `username` = '13333333333' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 30 , '0.000000000000购买Lv1托管引擎，周期：10800小时，收益：9.000000000000' , '125.71.154.140' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36' , '2018-07-25 14:48:26') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:48:29+08:00 ] 125.71.154.140 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:17+08:00 ] 125.71.154.140 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 14:51:16' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:18+08:00 ] 125.71.154.140 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:34+08:00 ] 125.71.154.140 GET /team.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:35+08:00 ] 125.71.154.140 POST /team/member
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`a`.`type`,`a`.`username`,`p`.`nickname`,`p`.`idcard`,d.one AS count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `dashboard` `d` ON `d`.`username`=`a`.`username` WHERE  `inviter` = '13333333333' LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:36+08:00 ] 125.71.154.140 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:38+08:00 ] 125.71.154.140 POST /machine/profit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `machine`  SET `profit` = profit+0.14166661 , `count` = count+1 , `profit_at` = '2018-07-25 14:51:37' , `update_at` = '2018-07-25 14:51:37'  WHERE  `mid` = 'H3038940' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `machine`  SET `profit` = profit+162.96296304 , `count` = count+1 , `profit_at` = '2018-07-25 14:51:37' , `update_at` = '2018-07-25 14:51:37'  WHERE  `mid` = 'H1842934' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `machine`  SET `profit` = profit+3.92156864 , `count` = count+1 , `profit_at` = '2018-07-25 14:51:37' , `update_at` = '2018-07-25 14:51:37'  WHERE  `mid` = 'U5953189' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `machine`  SET `profit` = profit+1.48148144 , `count` = count+1 , `profit_at` = '2018-07-25 14:51:37' , `update_at` = '2018-07-25 14:51:37'  WHERE  `mid` = 'V7772772' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `machine`  SET `profit` = profit+0.13333328 , `count` = count+1 , `profit_at` = '2018-07-25 14:51:37' , `update_at` = '2018-07-25 14:51:37'  WHERE  `mid` = 'E9558682' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `machine`  SET `profit` = profit+0.01333328 , `count` = count+1 , `profit_at` = '2018-07-25 14:51:37' , `update_at` = '2018-07-25 14:51:37'  WHERE  `mid` = 'J4568245' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] INSERT INTO `clock` (`username` , `mid` , `money` , `create_at`) VALUES ( '13333333333','H3038940',0.14166661,'2018-07-25 14:51:37' ) , ( '13333333333','H1842934',162.96296304,'2018-07-25 14:51:37' ) , ( '13333333333','U5953189',3.92156864,'2018-07-25 14:51:37' ) , ( '13333333333','V7772772',1.48148144,'2018-07-25 14:51:37' ) , ( '13333333333','E9558682',0.13333328,'2018-07-25 14:51:37' ) , ( '13333333333','J4568245',0.01333328,'2018-07-25 14:51:37' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `uuid` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `uuid` WHERE  `id` = 'N18072553879293' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `uuid` (`id` , `type`) VALUES ('N18072553879293' , 8) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `record` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `record` (`rid` , `username` , `currency` , `business` , `before` , `now` , `after` , `create_at`) VALUES ( 'N18072553879293','13333333333',1,21,843889.73660808,168.65434629,844058.39095437,'2018-07-25 14:51:38' ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `wallet`  SET `money` = `money` + 168.65434629 , `profit` = `profit` + 168.65434629 , `update_at` = '2018-07-25 14:51:38'  WHERE  `username` = '13333333333' [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13333333333' , 31 , '168.65434629' , '125.71.154.140' , 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36' , '2018-07-25 14:51:37') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:39+08:00 ] 125.71.154.140 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:44+08:00 ] 125.71.154.140 GET /store.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `status`,COUNT(id) AS count FROM `order` WHERE  `buyer` = '13333333333' GROUP BY `status` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:44+08:00 ] 125.71.154.140 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 1  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:55+08:00 ] 125.71.154.140 GET /store.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `status`,COUNT(id) AS count FROM `order` WHERE  `buyer` = '13333333333' GROUP BY `status` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T14:51:56+08:00 ] 125.71.154.140 POST /store/list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `id`,`status`,`catalog`,`username`,`divide`,`title`,`image`,`cycle`,`income`,`power`,`price`,`price_score`,`limit`,`day`,`stock`,`content` FROM `store` WHERE  `catalog` = 1  AND `status` = 1 ORDER BY `sort` DESC,`sales` DESC,`create_at` DESC LIMIT 0,20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T15:01:49+08:00 ] 120.5.53.225 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.046800s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T15:36:22+08:00 ] 101.199.120.145 GET /
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T15:36:54+08:00 ] 125.71.154.140 GET /machine.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `machine` WHERE  `username` = '13333333333'  AND `status` = 1 ORDER BY `create_at` DESC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `m`.`name`,`c`.* FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` WHERE  `c`.`username` = '13333333333' ORDER BY `c`.`create_at` DESC LIMIT 20 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T15:37:02+08:00 ] 125.71.154.140 GET /help.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `article` WHERE  `type` = 8 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-07-25T15:37:10+08:00 ] 125.71.154.140 GET /account.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015600s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-25 15:37:10' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.015600s ]
+---------------------------------------------------------------
+[ 2018-07-25T15:37:12+08:00 ] 125.71.154.140 POST /account/sync
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=kuangji;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015600s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.031200s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13333333333' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13333333333'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13333333333' GROUP BY `type` [ RunTime:0.000000s ]

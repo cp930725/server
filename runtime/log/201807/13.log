@@ -1,0 +1,2867 @@
+---------------------------------------------------------------
+[ 2018-07-13T11:40:58+08:00 ] 101.24.210.198 GET /admin/account.html?nsukey=wRowL%2FohMSG4bA33YmdyU9PprhzgspMzBfoaTir4NGYRxTMQXZa7iAYOohe8olV8ix2ifskIyh5kmPgXLfSxW9M1kkQ4eRHSsKZvjKaQnyyO2gnfdlKytVEgO8nHzjNQYN5hW%2Fpbr4tyPrlLjYLMh3hTD4WkKz0J7pWZY1svhlE%3D
+[ info ] www.amadubai.co/admin/account.html?nsukey=wRowL%2FohMSG4bA33YmdyU9PprhzgspMzBfoaTir4NGYRxTMQXZa7iAYOohe8olV8ix2ifskIyh5kmPgXLfSxW9M1kkQ4eRHSsKZvjKaQnyyO2gnfdlKytVEgO8nHzjNQYN5hW%2Fpbr4tyPrlLjYLMh3hTD4WkKz0J7pWZY1svhlE%3D [运行时间：0.024535s][吞吐率：40.76req/s] [内存消耗：2,188.77kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'wRowL/ohMSG4bA33YmdyU9PprhzgspMzBfoaTir4NGYRxTMQXZa7iAYOohe8olV8ix2ifskIyh5kmPgXLfSxW9M1kkQ4eRHSsKZvjKaQnyyO2gnfdlKytVEgO8nHzjNQYN5hW/pbr4tyPrlLjYLMh3hTD4WkKz0J7pWZY1svhlE=',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/account/index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.001118s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 0,20 [ RunTime:0.001628s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:08+08:00 ] 101.24.210.198 GET /admin/store/prop.html
+[ info ] www.amadubai.co/admin/store/prop.html [运行时间：0.029298s][吞吐率：34.13req/s] [内存消耗：2,115.49kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/admin/account.html?nsukey=wRowL%2FohMSG4bA33YmdyU9PprhzgspMzBfoaTir4NGYRxTMQXZa7iAYOohe8olV8ix2ifskIyh5kmPgXLfSxW9M1kkQ4eRHSsKZvjKaQnyyO2gnfdlKytVEgO8nHzjNQYN5hW%2Fpbr4tyPrlLjYLMh3hTD4WkKz0J7pWZY1svhlE%3D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/store/prop.html [ array (
+  0 => 'store',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000675s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store` WHERE  `catalog` = 2 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `catalog` = 2 ORDER BY `sort` DESC LIMIT 0,10 [ RunTime:0.000393s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:10+08:00 ] 101.24.210.198 GET /admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D
+[ info ] www.amadubai.co/admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D [运行时间：0.021802s][吞吐率：45.87req/s] [内存消耗：2,116.42kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => '+43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB/S1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue+S0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/store/prop.html [ array (
+  0 => 'store',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `store` WHERE  `catalog` = 2 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `catalog` = 2 ORDER BY `sort` DESC LIMIT 0,10 [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:16+08:00 ] 101.24.210.198 GET /admin.html
+[ info ] www.amadubai.co/admin.html [运行时间：0.026203s][吞吐率：38.16req/s] [内存消耗：2,066.87kb] [文件加载：70]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/index/index.html [ array (
+  0 => 'totalPeople',
+  1 => 'noAuthen',
+  2 => 'onAuthen',
+  3 => 'totalTrade',
+  4 => 'buyTrade',
+  5 => 'sellTrade',
+  6 => 'monthOrdersDay',
+  7 => 'monthOrdersNumber',
+  8 => 'newOrders',
+  9 => 'statuses',
+  10 => 'buyCount',
+  11 => 'sellCount',
+  12 => 'buyNumber',
+  13 => 'buyMoney',
+  14 => 'sellNumber',
+  15 => 'sellMoney',
+  16 => 'store',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT authen, count(id) AS number FROM `account` GROUP BY `authen` [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT type, count(id) AS number FROM `trade` GROUP BY `type` [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(`create_at`, "%Y-%m-%d") AS date, COUNT(id) AS number FROM `trade` WHERE  `create_at` >= '2018-06-13' GROUP BY `date` [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`username`,`p`.`nickname`,`t`.`tid`,`t`.`status`,`t`.`number`,`t`.`price` FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` ORDER BY `t`.`create_at` DESC LIMIT 5 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT type, status, COUNT(id) AS count, SUM(number) number, SUM(price * number) price FROM `trade` GROUP BY `type`,`status` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `catalog` = 1 ORDER BY `income` DESC [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` < `income` GROUP BY `product` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` >= `income` GROUP BY `product` [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` WHERE  `c`.`create_at` > '2018-07-13' GROUP BY `m`.`product` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` GROUP BY `m`.`product` [ RunTime:0.000542s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:17+08:00 ] 101.24.210.198 GET /admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D
+[ info ] www.amadubai.co/admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D [运行时间：0.026948s][吞吐率：37.11req/s] [内存消耗：2,067.42kb] [文件加载：70]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'V8oy9YXkz5Hob5lOOpWv0sjMMCY+H6P1LRdg2wuI1Xah5qflI+0rPm+1JcH1Pr2rbvM9mOCS/WdvSKIIm/GgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8+R5fxJ85s88UegLq6RUVIbm/r7xziDIkDhZJkL+FiqQaw==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/index/index.html [ array (
+  0 => 'totalPeople',
+  1 => 'noAuthen',
+  2 => 'onAuthen',
+  3 => 'totalTrade',
+  4 => 'buyTrade',
+  5 => 'sellTrade',
+  6 => 'monthOrdersDay',
+  7 => 'monthOrdersNumber',
+  8 => 'newOrders',
+  9 => 'statuses',
+  10 => 'buyCount',
+  11 => 'sellCount',
+  12 => 'buyNumber',
+  13 => 'buyMoney',
+  14 => 'sellNumber',
+  15 => 'sellMoney',
+  16 => 'store',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT authen, count(id) AS number FROM `account` GROUP BY `authen` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT type, count(id) AS number FROM `trade` GROUP BY `type` [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(`create_at`, "%Y-%m-%d") AS date, COUNT(id) AS number FROM `trade` WHERE  `create_at` >= '2018-06-13' GROUP BY `date` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`username`,`p`.`nickname`,`t`.`tid`,`t`.`status`,`t`.`number`,`t`.`price` FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` ORDER BY `t`.`create_at` DESC LIMIT 5 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT type, status, COUNT(id) AS count, SUM(number) number, SUM(price * number) price FROM `trade` GROUP BY `type`,`status` [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `catalog` = 1 ORDER BY `income` DESC [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` < `income` GROUP BY `product` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` >= `income` GROUP BY `product` [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` WHERE  `c`.`create_at` > '2018-07-13' GROUP BY `m`.`product` [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` GROUP BY `m`.`product` [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:27+08:00 ] 101.24.210.198 GET /admin/account.html
+[ info ] www.amadubai.co/admin/account.html [运行时间：0.022239s][吞吐率：44.97req/s] [内存消耗：2,187.67kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/account/index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 0,20 [ RunTime:0.001290s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:29+08:00 ] 101.24.210.198 GET /admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D
+[ info ] www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D [运行时间：0.023060s][吞吐率：43.37req/s] [内存消耗：2,188.58kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8//h6vWR7IJOtR8aaIIMwrlpwHy/Y6EoGZa8/kCP754lsHA1zuLKebOA0VoJKxC++FM+i0Y0dxVNNaCl7drOERHnXcr21dF2NOe9/g9snhcxCA+OyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/account/index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 0,20 [ RunTime:0.001265s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:49+08:00 ] 101.24.210.198 GET /admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D&page=2 [运行时间：0.021880s][吞吐率：45.70req/s] [内存消耗：2,188.99kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8//h6vWR7IJOtR8aaIIMwrlpwHy/Y6EoGZa8/kCP754lsHA1zuLKebOA0VoJKxC++FM+i0Y0dxVNNaCl7drOERHnXcr21dF2NOe9/g9snhcxCA+OyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/account/index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 20,20 [ RunTime:0.001301s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:41:53+08:00 ] 101.24.210.198 GET /admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2 [运行时间：0.022598s][吞吐率：44.25req/s] [内存消耗：2,188.21kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'n+IYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z+9z2UGP9jDBs+C1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg+dbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C+TEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X+SvTszC9WOIekfr7BHFw==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/account/index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 20,20 [ RunTime:0.001266s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:11+08:00 ] 61.151.178.165 GET /admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D
+[ info ] www.amadubai.co/admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D [运行时间：0.009366s][吞吐率：106.77req/s] [内存消耗：1,087.66kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.4; HUAWEI ALE-CL00 Build/HuaweiALE-CL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => '+43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB/S1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue+S0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:12+08:00 ] 61.151.178.165 GET /admin/store/prop.html
+[ info ] www.amadubai.co/admin/store/prop.html [运行时间：0.008872s][吞吐率：112.72req/s] [内存消耗：1,085.80kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:14+08:00 ] 61.151.226.61 GET /admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D
+[ info ] www.amadubai.co/admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D [运行时间：0.008926s][吞吐率：112.03req/s] [内存消耗：1,089.29kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => '+43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB/S1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue+S0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:14+08:00 ] 61.151.226.61 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Fstore%2Fprop.html%3Fnsukey%3D%252B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%252FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%252BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%253D%253D
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Fstore%2Fprop.html%3Fnsukey%3D%252B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%252FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%252BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%253D%253D [运行时间：0.009394s][吞吐率：106.45req/s] [内存消耗：1,045.88kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=b8ia6maurp7cg0f0f30rs8a6hm',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin/store/prop.html?nsukey=%2B43HEl8Tvsdy2uIqZ7LJSZVqgGlJtZCKfpUTNNS3H4YoM0qDRFGa3qC3vQjvgTP2ZQx2hXXK7aalzGq9kiLlB%2FS1IEq7QH1eBKSLtW4ubafddLHjLe1ed6EtSPDZr2q2Q4khjCuhHg48OgcBBMxDHQ1y65Q5Lue%2BS0RNbSVIjlGssax62cORyStXSch2TzcEfzBfvJVqWDIFXQBjpTXbhw%3D%3D',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:17+08:00 ] 117.135.173.78 GET /admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D
+[ info ] www.amadubai.co/admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D [运行时间：0.008693s][吞吐率：115.04req/s] [内存消耗：1,077.30kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.27.400 QQBrowser/9.0.2524.400',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'V8oy9YXkz5Hob5lOOpWv0sjMMCY+H6P1LRdg2wuI1Xah5qflI+0rPm+1JcH1Pr2rbvM9mOCS/WdvSKIIm/GgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8+R5fxJ85s88UegLq6RUVIbm/r7xziDIkDhZJkL+FiqQaw==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:17+08:00 ] 61.151.178.166 GET /admin/store/prop.html
+[ info ] www.amadubai.co/admin/store/prop.html [运行时间：0.009389s][吞吐率：106.51req/s] [内存消耗：1,087.43kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:17+08:00 ] 61.151.178.166 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Fstore%2Fprop.html
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Fstore%2Fprop.html [运行时间：0.009719s][吞吐率：102.89req/s] [内存消耗：1,044.86kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=j5ff42nntvghbmr15aricfh1l7',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin/store/prop.html',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:21+08:00 ] 101.226.79.232 GET /admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D
+[ info ] www.amadubai.co/admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D [运行时间：0.010037s][吞吐率：99.63req/s] [内存消耗：1,078.93kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'V8oy9YXkz5Hob5lOOpWv0sjMMCY+H6P1LRdg2wuI1Xah5qflI+0rPm+1JcH1Pr2rbvM9mOCS/WdvSKIIm/GgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8+R5fxJ85s88UegLq6RUVIbm/r7xziDIkDhZJkL+FiqQaw==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:22+08:00 ] 101.226.79.232 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin.html%3Fnsukey%3DV8oy9YXkz5Hob5lOOpWv0sjMMCY%252BH6P1LRdg2wuI1Xah5qflI%252B0rPm%252B1JcH1Pr2rbvM9mOCS%252FWdvSKIIm%252FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%252BR5fxJ85s88UegLq6RUVIbm%252Fr7xziDIkDhZJkL%252BFiqQaw%253D%253D
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin.html%3Fnsukey%3DV8oy9YXkz5Hob5lOOpWv0sjMMCY%252BH6P1LRdg2wuI1Xah5qflI%252B0rPm%252B1JcH1Pr2rbvM9mOCS%252FWdvSKIIm%252FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%252BR5fxJ85s88UegLq6RUVIbm%252Fr7xziDIkDhZJkL%252BFiqQaw%253D%253D [运行时间：0.009835s][吞吐率：101.68req/s] [内存消耗：1,045.88kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=mehmvk12ljeqaupha3okhusr9s',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin.html?nsukey=V8oy9YXkz5Hob5lOOpWv0sjMMCY%2BH6P1LRdg2wuI1Xah5qflI%2B0rPm%2B1JcH1Pr2rbvM9mOCS%2FWdvSKIIm%2FGgLOjo33cWsvfq6z7hBywQeRaQENbdjxGtfln3RZGEvpnjWxNuWmTj8UEurzDJ6Vsc99gWtXvL6z8kLxFudgCV8%2BR5fxJ85s88UegLq6RUVIbm%2Fr7xziDIkDhZJkL%2BFiqQaw%3D%3D',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:24+08:00 ] 101.24.210.198 GET /admin/account/simulate.html?username=15888888888
+[ info ] www.amadubai.co/admin/account/simulate.html?username=15888888888 [运行时间：0.026628s][吞吐率：37.55req/s] [内存消耗：2,393.70kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15888888888',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000667s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:25+08:00 ] 101.24.210.198 GET /admin/account/simulate.html?username=15888888888&nsukey=FDkdaOtLma6%2FQDhM3qpLWFPwXl4mQOdvCtl%2BD9WBxm%2F%2Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%2BMg0lzTA1FKA5HF%2B7tQI3%2BStEDdmiMKV%2FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr
+[ info ] www.amadubai.co/admin/account/simulate.html?username=15888888888&nsukey=FDkdaOtLma6%2FQDhM3qpLWFPwXl4mQOdvCtl%2BD9WBxm%2F%2Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%2BMg0lzTA1FKA5HF%2B7tQI3%2BStEDdmiMKV%2FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr [运行时间：0.026141s][吞吐率：38.25req/s] [内存消耗：2,392.58kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15888888888',
+  'nsukey' => 'FDkdaOtLma6/QDhM3qpLWFPwXl4mQOdvCtl+D9WBxm/+z1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV+Mg0lzTA1FKA5HF+7tQI3+StEDdmiMKV/LLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000484s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:25+08:00 ] 101.24.210.198 GET /account.html
+[ info ] www.amadubai.co/account.html [运行时间：0.026296s][吞吐率：38.03req/s] [内存消耗：2,260.12kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'news',
+  3 => 'user',
+  4 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-13 11:42:25' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000361s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:29+08:00 ] 61.151.226.62 GET /admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D
+[ info ] www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D [运行时间：0.010381s][吞吐率：96.33req/s] [内存消耗：1,130.93kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.4; Coolpad Y82-520 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8//h6vWR7IJOtR8aaIIMwrlpwHy/Y6EoGZa8/kCP754lsHA1zuLKebOA0VoJKxC++FM+i0Y0dxVNNaCl7drOERHnXcr21dF2NOe9/g9snhcxCA+OyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:30+08:00 ] 101.24.210.198 GET /account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D
+[ info ] www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D [运行时间：0.025997s][吞吐率：38.47req/s] [内存消耗：2,260.95kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2+2bfAgwmoI95N+N5MN8si/HWJh+M0q/q+ZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH/Ev9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'news',
+  3 => 'user',
+  4 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-13 11:42:30' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:31+08:00 ] 101.24.210.198 POST /account/sync
+[ info ] www.amadubai.co/account/sync [运行时间：0.026254s][吞吐率：38.09req/s] [内存消耗：2,226.52kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/sync',
+  'route' => 'account/sync',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'referer' => 'http://www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'authentication' => 'undefined',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://www.amadubai.co',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001418s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '15888888888'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `machine` WHERE  `source` = 1  AND `username` = '15888888888' LIMIT 1 [ RunTime:0.000282s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:33+08:00 ] 101.226.79.241 GET /admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D
+[ info ] www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D [运行时间：0.008965s][吞吐率：111.54req/s] [内存消耗：1,132.56kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8//h6vWR7IJOtR8aaIIMwrlpwHy/Y6EoGZa8/kCP754lsHA1zuLKebOA0VoJKxC++FM+i0Y0dxVNNaCl7drOERHnXcr21dF2NOe9/g9snhcxCA+OyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:33+08:00 ] 101.226.79.241 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount.html%3Fnsukey%3DMTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%252F%252Fh6vWR7IJOtR8aaIIMwrlpwHy%252FY6EoGZa8%252FkCP754lsHA1zuLKebOA0VoJKxC%252B%252BFM%252Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%252Fg9snhcxCA%252BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%253D%253D
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount.html%3Fnsukey%3DMTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%252F%252Fh6vWR7IJOtR8aaIIMwrlpwHy%252FY6EoGZa8%252FkCP754lsHA1zuLKebOA0VoJKxC%252B%252BFM%252Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%252Fg9snhcxCA%252BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%253D%253D [运行时间：0.009475s][吞吐率：105.54req/s] [内存消耗：1,045.94kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=sf2u7tciq2b1q2jv2144m51073',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:35+08:00 ] 101.24.210.198 GET /account/profile.html
+[ info ] www.amadubai.co/account/profile.html [运行时间：0.025043s][吞吐率：39.93req/s] [内存消耗：2,292.50kb] [文件加载：74]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/profile',
+  'route' => 'account/profile',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/profile.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:36+08:00 ] 101.24.210.198 GET /account/profile.html?nsukey=b9DubqqDakfmODrxWC3Ok3FPfhYQPwh%2F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%2B6%2Bqzd%2BjOiQdmT4%2BlamaHoBkS7IM04s7bwbfCd38Y%2B01%2BOkEaQdxk0%2Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%2Bs59e4kDAWygCxVg%3D%3D
+[ info ] www.amadubai.co/account/profile.html?nsukey=b9DubqqDakfmODrxWC3Ok3FPfhYQPwh%2F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%2B6%2Bqzd%2BjOiQdmT4%2BlamaHoBkS7IM04s7bwbfCd38Y%2B01%2BOkEaQdxk0%2Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%2Bs59e4kDAWygCxVg%3D%3D [运行时间：0.023690s][吞吐率：42.21req/s] [内存消耗：2,293.05kb] [文件加载：74]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/profile',
+  'route' => 'account/profile',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'b9DubqqDakfmODrxWC3Ok3FPfhYQPwh/1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s+6+qzd+jOiQdmT4+lamaHoBkS7IM04s7bwbfCd38Y+01+OkEaQdxk0/n3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX+s59e4kDAWygCxVg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/profile.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:42:53+08:00 ] 61.151.226.64 GET /admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D&page=2 [运行时间：0.011309s][吞吐率：88.43req/s] [内存消耗：1,131.43kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.49 Mobile MQQBrowser/6.2 TBS/043024 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8//h6vWR7IJOtR8aaIIMwrlpwHy/Y6EoGZa8/kCP754lsHA1zuLKebOA0VoJKxC++FM+i0Y0dxVNNaCl7drOERHnXcr21dF2NOe9/g9snhcxCA+OyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:54+08:00 ] 61.151.225.155 GET /admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2 [运行时间：0.009243s][吞吐率：108.19req/s] [内存消耗：1,131.43kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; OPPO R9s Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile MQQBrowser/6.9 TBS/036906 Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'n+IYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z+9z2UGP9jDBs+C1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg+dbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C+TEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X+SvTszC9WOIekfr7BHFw==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:58+08:00 ] 61.151.226.62 GET /admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D&page=2 [运行时间：0.009614s][吞吐率：104.02req/s] [内存消耗：1,133.06kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8//h6vWR7IJOtR8aaIIMwrlpwHy/Y6EoGZa8/kCP754lsHA1zuLKebOA0VoJKxC++FM+i0Y0dxVNNaCl7drOERHnXcr21dF2NOe9/g9snhcxCA+OyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:59+08:00 ] 61.151.226.62 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount.html%3Fnsukey%3DMTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%252F%252Fh6vWR7IJOtR8aaIIMwrlpwHy%252FY6EoGZa8%252FkCP754lsHA1zuLKebOA0VoJKxC%252B%252BFM%252Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%252Fg9snhcxCA%252BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%253D%253D%26page%3D2
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount.html%3Fnsukey%3DMTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%252F%252Fh6vWR7IJOtR8aaIIMwrlpwHy%252FY6EoGZa8%252FkCP754lsHA1zuLKebOA0VoJKxC%252B%252BFM%252Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%252Fg9snhcxCA%252BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%253D%253D%26page%3D2 [运行时间：0.010318s][吞吐率：96.92req/s] [内存消耗：1,045.94kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=v7hc5id8bn1loquo59cf4bufie',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin/account.html?nsukey=MTP38NH66EyXOgjTQycWySTF3O7iSNXZLtYMqT8fqBI8%2F%2Fh6vWR7IJOtR8aaIIMwrlpwHy%2FY6EoGZa8%2FkCP754lsHA1zuLKebOA0VoJKxC%2B%2BFM%2Bi0Y0dxVNNaCl7drOERHnXcr21dF2NOe9%2Fg9snhcxCA%2BOyJ4SVabhkq7htKjhe0MN71rCOPFaRW9JIRzQV3Agm9rMVcoRRZPyP3xvMwg%3D%3D&page=2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:59+08:00 ] 101.226.86.152 GET /admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2 [运行时间：0.009052s][吞吐率：110.47req/s] [内存消耗：1,133.06kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'n+IYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z+9z2UGP9jDBs+C1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg+dbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C+TEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X+SvTszC9WOIekfr7BHFw==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:42:59+08:00 ] 101.226.86.152 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount.html%3Fnsukey%3Dn%252BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%252B9z2UGP9jDBs%252BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%252Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%252BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%252BSvTszC9WOIekfr7BHFw%253D%253D%26page%3D2
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount.html%3Fnsukey%3Dn%252BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%252B9z2UGP9jDBs%252BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%252Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%252BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%252BSvTszC9WOIekfr7BHFw%253D%253D%26page%3D2 [运行时间：0.009399s][吞吐率：106.40req/s] [内存消耗：1,045.94kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=n0nt24q22nk5q160sf9rnsubfs',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:13+08:00 ] 101.24.210.198 GET /account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D
+[ info ] www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D [运行时间：0.027358s][吞吐率：36.55req/s] [内存消耗：2,260.95kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2+2bfAgwmoI95N+N5MN8si/HWJh+M0q/q+ZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH/Ev9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'news',
+  3 => 'user',
+  4 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-13 11:43:13' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:43:14+08:00 ] 101.24.210.198 POST /account/sync
+[ info ] www.amadubai.co/account/sync [运行时间：0.025422s][吞吐率：39.34req/s] [内存消耗：2,226.52kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/sync',
+  'route' => 'account/sync',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'referer' => 'http://www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'authentication' => 'undefined',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://www.amadubai.co',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000406s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15888888888' LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '15888888888'  AND `authen` = 1 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `machine` WHERE  `source` = 1  AND `username` = '15888888888' LIMIT 1 [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:43:24+08:00 ] 117.185.117.57 GET /admin/account/simulate.html?username=15888888888&nsukey=FDkdaOtLma6%2FQDhM3qpLWFPwXl4mQOdvCtl%2BD9WBxm%2F%2Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%2BMg0lzTA1FKA5HF%2B7tQI3%2BStEDdmiMKV%2FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr
+[ info ] www.amadubai.co/admin/account/simulate.html?username=15888888888&nsukey=FDkdaOtLma6%2FQDhM3qpLWFPwXl4mQOdvCtl%2BD9WBxm%2F%2Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%2BMg0lzTA1FKA5HF%2B7tQI3%2BStEDdmiMKV%2FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr [运行时间：0.009335s][吞吐率：107.13req/s] [内存消耗：1,157.84kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/en',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15888888888',
+  'nsukey' => 'FDkdaOtLma6/QDhM3qpLWFPwXl4mQOdvCtl+D9WBxm/+z1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV+Mg0lzTA1FKA5HF+7tQI3+StEDdmiMKV/LLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:25+08:00 ] 61.151.226.62 GET /admin/account/simulate.html?username=15888888888
+[ info ] www.amadubai.co/admin/account/simulate.html?username=15888888888 [运行时间：0.010216s][吞吐率：97.89req/s] [内存消耗：1,156.38kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15888888888',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:25+08:00 ] 101.24.210.198 GET /admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2 [运行时间：0.023847s][吞吐率：41.93req/s] [内存消耗：2,197.52kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'n+IYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z+9z2UGP9jDBs+C1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg+dbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C+TEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X+SvTszC9WOIekfr7BHFw==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/account/index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000434s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 20,20 [ RunTime:0.002180s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:43:26+08:00 ] 117.185.117.59 GET /admin/account/simulate.html?username=15888888888
+[ info ] www.amadubai.co/admin/account/simulate.html?username=15888888888 [运行时间：0.010919s][吞吐率：91.58req/s] [内存消耗：1,158.08kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15888888888',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:26+08:00 ] 117.185.117.59 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount%2Fsimulate.html%3Fusername%3D15888888888
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount%2Fsimulate.html%3Fusername%3D15888888888 [运行时间：0.009263s][吞吐率：107.96req/s] [内存消耗：1,044.94kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=nce1sp2c71kjrt40fmdqnlc6us',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin/account/simulate.html?username=15888888888',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:28+08:00 ] 101.24.210.198 GET /admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2
+[ info ] www.amadubai.co/admin/account.html?nsukey=n%2BIYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z%2B9z2UGP9jDBs%2BC1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg%2Bdbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C%2BTEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X%2BSvTszC9WOIekfr7BHFw%3D%3D&page=2 [运行时间：0.021640s][吞吐率：46.21req/s] [内存消耗：2,197.52kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 MicroMessenger/6.7.0 NetType/WIFI Language/zh_CN',
+  'cookie' => 'PHPSESSID=a69fabdajc1og21vakvt513g4h',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'n+IYFTjU4GYUF8RAcnyyI5FyJMJShUp3Cl7Z+9z2UGP9jDBs+C1EEScEFqxGXmH95o2LrSy70yNDjddXZ0owSg+dbo8ejK0fGvmmBuEp5Z9mauim0RpoJExmzZzoZ8gh7C+TEIKqiSB8IpEne8SRLEch0WJyMSKr6E9FJ2NDC1IKtbt00Hym1Vlq4stFBRkZ7X+SvTszC9WOIekfr7BHFw==',
+  'page' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/account/index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 20,20 [ RunTime:0.001273s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:43:29+08:00 ] 61.151.226.151 GET /admin/account/simulate.html?username=15888888888&nsukey=FDkdaOtLma6%2FQDhM3qpLWFPwXl4mQOdvCtl%2BD9WBxm%2F%2Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%2BMg0lzTA1FKA5HF%2B7tQI3%2BStEDdmiMKV%2FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr
+[ info ] www.amadubai.co/admin/account/simulate.html?username=15888888888&nsukey=FDkdaOtLma6%2FQDhM3qpLWFPwXl4mQOdvCtl%2BD9WBxm%2F%2Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%2BMg0lzTA1FKA5HF%2B7tQI3%2BStEDdmiMKV%2FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr [运行时间：0.009790s][吞吐率：102.15req/s] [内存消耗：1,159.53kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15888888888',
+  'nsukey' => 'FDkdaOtLma6/QDhM3qpLWFPwXl4mQOdvCtl+D9WBxm/+z1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV+Mg0lzTA1FKA5HF+7tQI3+StEDdmiMKV/LLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:29+08:00 ] 61.151.226.151 GET /admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount%2Fsimulate.html%3Fusername%3D15888888888%26nsukey%3DFDkdaOtLma6%252FQDhM3qpLWFPwXl4mQOdvCtl%252BD9WBxm%252F%252Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%252BMg0lzTA1FKA5HF%252B7tQI3%252BStEDdmiMKV%252FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr
+[ info ] www.amadubai.co/admin/login.html?from=http%3A%2F%2Fwww.amadubai.co%2Fadmin%2Faccount%2Fsimulate.html%3Fusername%3D15888888888%26nsukey%3DFDkdaOtLma6%252FQDhM3qpLWFPwXl4mQOdvCtl%252BD9WBxm%252F%252Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%252BMg0lzTA1FKA5HF%252B7tQI3%252BStEDdmiMKV%252FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr [运行时间：0.009463s][吞吐率：105.67req/s] [内存消耗：1,045.94kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=g55jhniq3mmsf4rtjjroqlu2l7',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/admin/account/simulate.html?username=15888888888&nsukey=FDkdaOtLma6%2FQDhM3qpLWFPwXl4mQOdvCtl%2BD9WBxm%2F%2Bz1fcXX5xsENbB5ZDNfbkz2LSjn5UlGoJkILnaYImtsBfqPaqByIkNV%2BMg0lzTA1FKA5HF%2B7tQI3%2BStEDdmiMKV%2FLLBjPYfdEhJpVGWocvY9WND9KHXDd6SiEEbWKsMkbWEvsFsnOSs6sRfyTxCxr',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/admin/view/staff/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:30+08:00 ] 61.151.178.174 GET /account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D
+[ info ] www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D [运行时间：0.009613s][吞吐率：104.03req/s] [内存消耗：1,192.87kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.4.4; Coolpad Y82-520 Build/KTU84P) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 MicroMessenger/6.5.4.1000 NetType/4G Language/zh_CN',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2+2bfAgwmoI95N+N5MN8si/HWJh+M0q/q+ZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH/Ev9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:37+08:00 ] 120.204.200.82 GET /account/profile.html?nsukey=b9DubqqDakfmODrxWC3Ok3FPfhYQPwh%2F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%2B6%2Bqzd%2BjOiQdmT4%2BlamaHoBkS7IM04s7bwbfCd38Y%2B01%2BOkEaQdxk0%2Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%2Bs59e4kDAWygCxVg%3D%3D
+[ info ] www.amadubai.co/account/profile.html?nsukey=b9DubqqDakfmODrxWC3Ok3FPfhYQPwh%2F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%2B6%2Bqzd%2BjOiQdmT4%2BlamaHoBkS7IM04s7bwbfCd38Y%2B01%2BOkEaQdxk0%2Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%2Bs59e4kDAWygCxVg%3D%3D [运行时间：0.011501s][吞吐率：86.95req/s] [内存消耗：1,193.29kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/profile',
+  'route' => 'account/profile',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.27.400 QQBrowser/9.0.2524.400',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'b9DubqqDakfmODrxWC3Ok3FPfhYQPwh/1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s+6+qzd+jOiQdmT4+lamaHoBkS7IM04s7bwbfCd38Y+01+OkEaQdxk0/n3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX+s59e4kDAWygCxVg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:40+08:00 ] 61.151.225.155 GET /account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D
+[ info ] www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D [运行时间：0.009790s][吞吐率：102.14req/s] [内存消耗：1,194.50kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2+2bfAgwmoI95N+N5MN8si/HWJh+M0q/q+ZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH/Ev9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:40+08:00 ] 61.151.225.155 GET /signin.html?from=http%3A%2F%2Fwww.amadubai.co%2Faccount.html%3Fnsukey%3DDzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%252B2bfAgwmoI95N%252BN5MN8si%252FHWJh%252BM0q%252Fq%252BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%252FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%253D%253D
+[ info ] www.amadubai.co/signin.html?from=http%3A%2F%2Fwww.amadubai.co%2Faccount.html%3Fnsukey%3DDzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%252B2bfAgwmoI95N%252BN5MN8si%252FHWJh%252BM0q%252Fq%252BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%252FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%253D%253D [运行时间：0.019862s][吞吐率：50.35req/s] [内存消耗：2,193.09kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signin',
+  'route' => 'account/signin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=ao4km6od59q0f65114oq492cfg',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/account.html?nsukey=DzcbjMLJTMSLTPZfiEhD7lw9aobAoDHbp0mAH5Dhg2%2B2bfAgwmoI95N%2BN5MN8si%2FHWJh%2BM0q%2Fq%2BZeKoLjVT8v4AnnlKJmKfcoIZ8UE9y10ilrFj9l3ltYq0r7FBng0P2Mxx3P8FhmWwv8A4STFRH%2FEv9Wy3Xts1PSbW27ByEUmEBPRUsfgDgVyvi212F9JM3adZPTySwlM0SuyM4VO8AZg%3D%3D',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/signin.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:43:41+08:00 ] 61.151.226.62 GET /account/profile.html?nsukey=b9DubqqDakfmODrxWC3Ok3FPfhYQPwh%2F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%2B6%2Bqzd%2BjOiQdmT4%2BlamaHoBkS7IM04s7bwbfCd38Y%2B01%2BOkEaQdxk0%2Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%2Bs59e4kDAWygCxVg%3D%3D
+[ info ] www.amadubai.co/account/profile.html?nsukey=b9DubqqDakfmODrxWC3Ok3FPfhYQPwh%2F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%2B6%2Bqzd%2BjOiQdmT4%2BlamaHoBkS7IM04s7bwbfCd38Y%2B01%2BOkEaQdxk0%2Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%2Bs59e4kDAWygCxVg%3D%3D [运行时间：0.010775s][吞吐率：92.81req/s] [内存消耗：1,194.92kb] [文件加载：59]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/profile',
+  'route' => 'account/profile',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'nsukey' => 'b9DubqqDakfmODrxWC3Ok3FPfhYQPwh/1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s+6+qzd+jOiQdmT4+lamaHoBkS7IM04s7bwbfCd38Y+01+OkEaQdxk0/n3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX+s59e4kDAWygCxVg==',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:43:41+08:00 ] 61.151.226.62 GET /signin.html?from=http%3A%2F%2Fwww.amadubai.co%2Faccount%2Fprofile.html%3Fnsukey%3Db9DubqqDakfmODrxWC3Ok3FPfhYQPwh%252F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%252B6%252Bqzd%252BjOiQdmT4%252BlamaHoBkS7IM04s7bwbfCd38Y%252B01%252BOkEaQdxk0%252Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%252Bs59e4kDAWygCxVg%253D%253D
+[ info ] www.amadubai.co/signin.html?from=http%3A%2F%2Fwww.amadubai.co%2Faccount%2Fprofile.html%3Fnsukey%3Db9DubqqDakfmODrxWC3Ok3FPfhYQPwh%252F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%252B6%252Bqzd%252BjOiQdmT4%252BlamaHoBkS7IM04s7bwbfCd38Y%252B01%252BOkEaQdxk0%252Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%252Bs59e4kDAWygCxVg%253D%253D [运行时间：0.011634s][吞吐率：85.95req/s] [内存消耗：1,308.99kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signin',
+  'route' => 'account/signin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.amadubai.co',
+  'accept-language' => 'en,*',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'PHPSESSID=svueje4aq25nf5ikr2vgdpc3h4',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4',
+  'referer' => '',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://www.amadubai.co/account/profile.html?nsukey=b9DubqqDakfmODrxWC3Ok3FPfhYQPwh%2F1rtBJGqmbnDjRiXT5GRQI1snmBHIZ7s%2B6%2Bqzd%2BjOiQdmT4%2BlamaHoBkS7IM04s7bwbfCd38Y%2B01%2BOkEaQdxk0%2Fn3x7b3hqcp27xgKDtKMLJvCgqnA9illt1WtxfpDaTTnIkKdbuo4fWrv6leGFBb1ANJP4BI4bKJpSyBQX%2Bs59e4kDAWygCxVg%3D%3D',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/signin.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:46:53+08:00 ] 101.227.139.171 GET /
+[ info ] www.xn--20t60kpyiw0x.com/ [运行时间：0.018774s][吞吐率：53.27req/s] [内存消耗：2,040.97kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'pragma' => 'no-cache',
+  'host' => 'www.xn--20t60kpyiw0x.com',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML; like Gecko) Mobile/12F70 MicroMessenger/6.1.5 NetType/WIFI',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/index/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000816s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:46:56+08:00 ] 101.24.210.198 GET /signin.html
+[ info ] www.amadubai.co/signin.html [运行时间：0.012360s][吞吐率：80.91req/s] [内存消耗：1,317.51kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signin',
+  'route' => 'account/signin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/signin.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:47:10+08:00 ] 101.24.210.198 POST /signin
+[ info ] www.amadubai.co/signin [运行时间：0.043520s][吞吐率：22.98req/s] [内存消耗：2,189.64kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signin',
+  'route' => 'account/signin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'connection' => 'keep-alive',
+  'content-length' => '36',
+  'referer' => 'http://www.amadubai.co/signin.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'authentication' => 'undefined',
+  'origin' => 'http://www.amadubai.co',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => 'www.amadubai.co',
+)
+[ info ] [ PARAM ] array (
+  'username' => '13931180666',
+  'password' => '222777',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000510s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13931180666'  AND `password` = '96a7c98874ed7d95be1b831d52029346' LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('13931180666' , 3 , NULL , '101.24.210.198' , 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79' , '2018-07-13 11:47:10') [ RunTime:0.017673s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:47:10+08:00 ] 101.24.210.198 GET /account.html
+[ info ] www.amadubai.co/account.html [运行时间：0.025784s][吞吐率：38.78req/s] [内存消耗：2,259.85kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/signin.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'news',
+  3 => 'user',
+  4 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000403s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-13 11:47:10' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:47:11+08:00 ] 101.24.210.198 POST /account/sync
+[ info ] www.amadubai.co/account/sync [运行时间：0.019571s][吞吐率：51.10req/s] [内存消耗：2,195.63kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/sync',
+  'route' => 'account/sync',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'referer' => 'http://www.amadubai.co/account.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'authentication' => 'undefined',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://www.amadubai.co',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:48:27+08:00 ] 101.24.210.198 GET /account.html
+[ info ] www.amadubai.co/account.html [运行时间：0.026025s][吞吐率：38.42req/s] [内存消耗：2,259.73kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/signin.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/account/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'news',
+  3 => 'user',
+  4 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2018-07-13 11:48:27' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:48:28+08:00 ] 101.24.210.198 POST /account/sync
+[ info ] www.amadubai.co/account/sync [运行时间：0.020020s][吞吐率：49.95req/s] [内存消耗：2,195.63kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/sync',
+  'route' => 'account/sync',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'referer' => 'http://www.amadubai.co/account.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'authentication' => 'undefined',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'origin' => 'http://www.amadubai.co',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT `type` FROM `account` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:48:29+08:00 ] 101.24.210.198 GET /contract.html
+[ info ] www.amadubai.co/contract.html [运行时间：0.012270s][吞吐率：81.50req/s] [内存消耗：1,273.34kb] [文件加载：66]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'contract',
+  'route' => 'contract/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/account.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/contract/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-13T11:48:30+08:00 ] 101.24.210.198 POST /contract/list
+[ info ] www.amadubai.co/contract/list [运行时间：0.019390s][吞吐率：51.57req/s] [内存消耗：2,149.00kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'contract/list',
+  'route' => 'contract/list',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'connection' => 'keep-alive',
+  'content-length' => '34',
+  'referer' => 'http://www.amadubai.co/contract.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'authentication' => 'undefined',
+  'origin' => 'http://www.amadubai.co',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => 'www.amadubai.co',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '20',
+  'filter' => 'all',
+  'catalog' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `contract` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `c`.`id`,`c`.`title`,`c`.`image`,`c`.`now_price`,`c`.`loop`,`p`.`idcard`,`p`.`avatar` FROM `contract` `c` LEFT JOIN `profile` `p` ON `p`.`username`=`c`.`owner` WHERE  `visible` = 1 ORDER BY `c`.`sort` DESC,`c`.`loop` DESC,`c`.`update_at` DESC LIMIT 0,20 [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:48:37+08:00 ] 101.24.210.198 GET /team.html
+[ info ] www.amadubai.co/team.html [运行时间：0.024558s][吞吐率：40.72req/s] [内存消耗：2,275.66kb] [文件加载：74]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'team',
+  'route' => 'team/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://www.amadubai.co/contract.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'host' => 'www.amadubai.co',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/amadubai.co/application/index/view/team/index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000496s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13931180666' LIMIT 1 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2018-07-13T11:48:37+08:00 ] 101.24.210.198 POST /team/member
+[ info ] www.amadubai.co/team/member [运行时间：0.020409s][吞吐率：49.00req/s] [内存消耗：2,049.53kb] [文件加载：73]
+[ info ] [ LANG ] /www/wwwroot/amadubai.co/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'team/member',
+  'route' => 'team/member',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jn6rd75o22q4e42jmn5bt32qgo',
+  'connection' => 'keep-alive',
+  'content-length' => '14',
+  'referer' => 'http://www.amadubai.co/team.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79',
+  'authentication' => 'undefined',
+  'origin' => 'http://www.amadubai.co',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => 'www.amadubai.co',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'size' => '20',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000504s ] mysql:host=127.0.0.1;dbname=amadubai_co;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`a`.`type`,`a`.`username`,`p`.`nickname`,`p`.`idcard`,d.one AS count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `dashboard` `d` ON `d`.`username`=`a`.`username` WHERE  `inviter` = '13931180666' LIMIT 0,20 [ RunTime:0.000838s ]
