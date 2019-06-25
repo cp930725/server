@@ -1,4 +1,4 @@
-<?php /*a:2:{s:74:"D:\phpstudy\PHPTutorial\WWW\test\application\index\view\funding\index.html";i:1560821767;s:73:"D:\phpstudy\PHPTutorial\WWW\test\application\index\view\common\world.html";i:1555177054;}*/ ?>
+<?php /*a:2:{s:74:"D:\phpstudy\PHPTutorial\WWW\test\application\index\view\funding\index.html";i:1560821823;s:73:"D:\phpstudy\PHPTutorial\WWW\test\application\index\view\common\world.html";i:1555177054;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -34,32 +34,32 @@
     </style>
     
 <style>
-    .projects-image {
-        width: 118px;height: 90px;
-    }
-    .projects-title {
-        font-size: 0.95rem;
-        font-weight: bold;
-    }
-    .media-body {
-        position: relative;
-    }
-    /* .projects-info {
-        position: absolute;left: 0;bottom: 0;right: 0;
-    }
-    .progress {
-        position: absolute;left: 0;bottom:2rem;right: 2.8rem;
-    } */
-    .progress-label {
-        position: absolute;right: 0;top: -.6rem;
-    }
-    .w-86 {
-        width: 86% !important;
-    }
-    a.media {
-        height: 90px;
-        text-decoration: none;
-    }
+.projects-image {
+	width: 118px;height: 90px;
+}
+.projects-title {
+	font-size: 0.95rem;
+	font-weight: bold;
+}
+.media-body {
+	position: relative;
+}
+/* .projects-info {
+	position: absolute;left: 0;bottom: 0;right: 0;
+}
+.progress {
+	position: absolute;left: 0;bottom:2rem;right: 2.8rem;
+} */
+.progress-label {
+    position: absolute;right: 0;top: -.6rem;
+}
+.w-86 {
+    width: 86% !important;
+}
+a.media {
+	height: 90px;
+	text-decoration: none;
+}
 </style>
 
 </head>
@@ -186,14 +186,14 @@
     </select>
     <select class="form-control custom-select w-auto ml-2" name="catalog">
         <option value="all">类型</option>
-        <?php if(is_array(app('config')->get('hello.funding.catalog')) || app('config')->get('hello.funding.catalog') instanceof \think\Collection || app('config')->get('hello.funding.catalog') instanceof \think\Paginator): $i = 0; $__LIST__ = app('config')->get('hello.funding.catalog');if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
-        <option value="<?php echo htmlentities($key); ?>"><?php echo htmlentities($item); ?></option>
-        <?php endforeach; endif; else: echo "" ;endif; ?>
+		<?php if(is_array(app('config')->get('hello.funding.catalog')) || app('config')->get('hello.funding.catalog') instanceof \think\Collection || app('config')->get('hello.funding.catalog') instanceof \think\Paginator): $i = 0; $__LIST__ = app('config')->get('hello.funding.catalog');if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
+        	<option value="<?php echo htmlentities($key); ?>"><?php echo htmlentities($item); ?></option>
+		<?php endforeach; endif; else: echo "" ;endif; ?>
     </select>
-    <a class="btn px-5 btn-success ml-auto" href="/funding/welcome.html">发起众筹</a>
+	<a class="btn px-5 btn-success ml-auto" href="/funding/welcome.html">发起众筹</a>
 </div>
 <div class="card p-3">
-    <div class="row projects"></div>
+	<div class="row projects"></div>
 </div>
 
             </div>
@@ -232,7 +232,7 @@
 <script type="text/javascript" src="/static/js/global.js?3"></script>
 
 <script>
-    var frame = 'index';
+var frame = 'index';
 </script>
 <script src="/static/js/funding.js?2"></script>
 
