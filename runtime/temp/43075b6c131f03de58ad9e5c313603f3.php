@@ -1,4 +1,4 @@
-<?php /*a:2:{s:73:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\funding\index.html";i:1561431606;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561518650;}*/ ?>
+<?php /*a:2:{s:70:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\team\index.html";i:1561528554;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561518650;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/assets/css/dashboard.css?3" />
     <link rel="stylesheet" href="/static/css/global.css?3" />
-    <title>创业众筹</title>
+    <title>公会团队</title>
     <style>
         @media (max-width: 360px) {
             .icon-group {
@@ -33,35 +33,6 @@
         }
     </style>
     
-<style>
-    .projects-image {
-        width: 118px;height: 90px;
-    }
-    .projects-title {
-        font-size: 0.95rem;
-        font-weight: bold;
-    }
-    .media-body {
-        position: relative;
-    }
-    /* .projects-info {
-        position: absolute;left: 0;bottom: 0;right: 0;
-    }
-    .progress {
-        position: absolute;left: 0;bottom:2rem;right: 2.8rem;
-    } */
-    .progress-label {
-        position: absolute;right: 0;top: -.6rem;
-    }
-    .w-86 {
-        width: 86% !important;
-    }
-    a.media {
-        height: 90px;
-        text-decoration: none;
-    }
-</style>
-
 </head>
 
 <body>
@@ -136,22 +107,63 @@
         <div class="my-3 my-md-5">
             <div class="container container-padding">
                 
-<div class="d-flex mb-3">
-    <select class="form-control custom-select w-auto" name="filter">
-        <option value="all">全部</option>
-        <option value="invest">我参与的</option>
-        <option value="my">我发布的</option>
-    </select>
-    <select class="form-control custom-select w-auto ml-2" name="catalog">
-        <option value="all">类型</option>
-        <?php if(is_array(app('config')->get('hello.funding.catalog')) || app('config')->get('hello.funding.catalog') instanceof \think\Collection || app('config')->get('hello.funding.catalog') instanceof \think\Paginator): $i = 0; $__LIST__ = app('config')->get('hello.funding.catalog');if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
-        <option value="<?php echo htmlentities($key); ?>"><?php echo htmlentities($item); ?></option>
-        <?php endforeach; endif; else: echo "" ;endif; ?>
-    </select>
-    <a class="btn px-5 btn-success ml-auto" href="/funding/welcome.html">发起众筹</a>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body p-3 text-center">
+                <div class="text-right text-green">位</div>
+                <div class="h2 m-0"><?php echo htmlentities($user['dashboard']['team_count']); ?></div>
+                <div class="small text-muted">团队人数</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body p-3 text-center">
+                <div class="text-right text-red">Gh/s</div>
+                <div class="h2 m-0"><?php echo htmlentities(money($user['dashboard']['team_power'])); ?></div>
+                <div class="small text-muted">团队算力</div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="card p-3">
-    <div class="row projects"></div>
+<div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="form-group mb-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <select class="form-control custom-select w-auto" name="type">
+                        <option value="">全部成员</option>
+                        <?php if(is_array(app('config')->get('hello.level')) || app('config')->get('hello.level') instanceof \think\Collection || app('config')->get('hello.level') instanceof \think\Paginator): $i = 0; $__LIST__ = app('config')->get('hello.level');if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
+                            <option value="<?php echo htmlentities($key); ?>"><?php echo htmlentities($item['name']); ?></option>
+                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                    </select>
+                </div>
+                <input type="text" class="form-control" placeholder="搜索成员..." name="key" maxlength="11" />
+                <span class="input-group-append">
+                    <button class="btn btn-secondary btn-search" type="button"><i class="fe fe-search"></i></button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-hover table-outline table-vcenter text-nowrap card-table table-member">
+            <thead>
+                <tr>
+                    <th class="text-center w-1"></th>
+                    <th>用户</th>
+                    <!-- <th hidden class="d-md-table-cell">Usage</th>
+                    <th hidden class="d-lg-table-cell">Activity</th> -->
+                    <th class="text-center">电话</th>
+                    <th class="text-center">人数</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <div hidden class="card-footer text-center card-more"><div class="text-muted">点击加载更多</div></div>
 </div>
 
             </div>
@@ -189,10 +201,7 @@
 <script type="text/javascript" src="/assets/js/require.min.js"></script>
 <script type="text/javascript" src="/static/js/global.js?3"></script>
 
-<script>
-    var frame = 'index';
-</script>
-<script src="/static/js/funding.js?2"></script>
+<script type="text/javascript" src="/static/js/team.js?1"></script>
 
 </body>
 </html>

@@ -3,7 +3,6 @@
 
 namespace app\api\controller;
 
-use app\index\controller\Base;
 use think\Db;
 use think\Request;
 
@@ -120,7 +119,7 @@ class Transfer extends Base
             if (empty($userTarget)) {
                 return json([
                     'code'      =>  504,
-                    'message'   =>  '很抱歉、对方的账号不存在！'
+                    'message'   =>  $number
                 ]);
             }
             if (empty($userTarget['account']['status'])) {

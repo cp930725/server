@@ -1,4 +1,4 @@
-<?php /*a:2:{s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\funding\detail.html";i:1561514869;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561450981;}*/ ?>
+<?php /*a:2:{s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\funding\detail.html";i:1561514869;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561518650;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </div>
-        <div class="header collapse d-lg-flex p-0" id="headerMenuCollapse">
+        <div class="color header collapse d-lg-flex p-0" id="headerMenuCollapse">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- <div class="col-lg-3 ml-auto header-search-div">

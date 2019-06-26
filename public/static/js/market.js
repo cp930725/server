@@ -86,7 +86,7 @@ require(['echarts-common'], function(echarts){
         var option = {
             title: {
                 show: true,
-                text: '当前价格：' + price+$('#market').attr('data-market'),
+                text: '当前价格: ￥' + price,
                 textStyle: {
                     fontSize: 14,
                     fontWeight: 'normal'
@@ -104,7 +104,7 @@ require(['echarts-common'], function(echarts){
                 formatter: function (params) {
                     params = params[0];
                     var date = new Date(params.name);
-                    return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' <br />最高成交价 ' + params.value[1] + $('#market').attr('data-market');
+                    return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' <br />最高成交价 ￥' + params.value[1];
                 },
                 axisPointer: {
                     animation: false

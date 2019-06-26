@@ -3,11 +3,11 @@
 
 namespace app\api\controller;
 
-use app\index\controller\Base;
 use think\Db;
-use think\facade\Env;
 use think\Request;
 use think\Validate;
+use think\facade\Env;
+use think\facade\Log;
 
 class Account extends Base
 {
@@ -80,10 +80,10 @@ class Account extends Base
         $dashboard = $this->dashboard($username);
         // 合并数据
         $data = [
-            'account'   => $account,
-            'profile'   => $profile,
-            'wallet'    =>  $wallet,
-            'dashboard' =>  $dashboard,
+            'account' => $account,
+            'profile' => $profile,
+            'wallet' => $wallet,
+            'dashboard' => $dashboard,
         ];
         // 会话保存
         if ($session) {
@@ -136,27 +136,27 @@ class Account extends Base
         $uid = $this->generateUID();
         // 基本数据
         $account = [
-            'uid'           =>  $uid,
-            'type'          =>  0,
-            'status'        =>  1,
-            'username'      =>  $username,
-            'authen'        =>  0,
-            'inviter'       =>  $inviter,
+            'uid' => $uid,
+            'type' => 0,
+            'status' => 1,
+            'username' => $username,
+            'authen' => 0,
+            'inviter' => $inviter,
         ];
         // 账户注册
         $bool = Db::table('account')->insert(array_merge($account, [
-            'password'      =>  encryption($password ?: 123456),
-            'safeword'      =>  encryption($safeword ?: 123456),
-            'create_at'     =>  $this->timestamp,
-            'update_at'     =>  $this->timestamp,
+            'password' => encryption($password ?: 123456),
+            'safeword' => encryption($safeword ?: 123456),
+            'create_at' => $this->timestamp,
+            'update_at' => $this->timestamp,
         ]));
         if (empty($bool)) {
             throw new \think\Exception("很抱歉、账户注册失败请重试！");
         }
         // 存在第三方档案
         $oauth_profile = [
-            'nickname'  =>  null,
-            'avatar'    =>  null,
+            'nickname' => null,
+            'avatar' => null,
         ];
         if (!empty($oauth)) {
             // 查询档案并绑定
@@ -164,78 +164,78 @@ class Account extends Base
         }
         // 建立档案
         $profile = [
-            'username'      =>  $username,
-            'nickname'      =>  $oauth_profile['nickname'] ?: $uid,
-            'avatar'        =>  $oauth_profile['avatar'],
-            'wechat'        =>  $username,
-            'qq'            =>  null,
-            'alipay'        =>  null,
-            'realname'      =>  null,
-            'idcard'        =>  null,
-            'authen_reason' =>  null,
-            'bankname'      =>  null,
-            'bankcard'      =>  null,
-            'bankaddress'   =>  null,
+            'username' => $username,
+            'nickname' => $oauth_profile['nickname'] ?: $uid,
+            'avatar' => $oauth_profile['avatar'],
+            'wechat' => $username,
+            'qq' => null,
+            'alipay' => null,
+            'realname' => null,
+            'idcard' => null,
+            'authen_reason' => null,
+            'bankname' => null,
+            'bankcard' => null,
+            'bankaddress' => null,
         ];
         $bool = Db::table('profile')->insert(array_merge($profile, [
-            'create_at'     =>  $this->timestamp,
-            'update_at'     =>  $this->timestamp,
+            'create_at' => $this->timestamp,
+            'update_at' => $this->timestamp,
         ]));
         if (empty($bool)) {
             throw new \think\Exception("很抱歉、档案建立失败请重试！");
         }
         // 创建钱包
         $wallet = [
-            'username'      =>  $username,
-            'money'         =>  0,
-            'deposit'       =>  0,
-            'score'         =>  0,
-            'score_deposit' =>  0,
-            'spend'         =>  0,
-            'profit'        =>  0,
-            'team_profit'   =>  0,
-            'bonus'         =>  0,
-            'trade'         =>  0,
-            'sell'          =>  0,
-            'buy'           =>  0,
+            'username' => $username,
+            'money' => 0,
+            'deposit' => 0,
+            'score' => 0,
+            'score_deposit' => 0,
+            'spend' => 0,
+            'profit' => 0,
+            'team_profit' => 0,
+            'bonus' => 0,
+            'trade' => 0,
+            'sell' => 0,
+            'buy' => 0,
         ];
         $bool = Db::table('wallet')->insert(array_merge($wallet, [
-            'create_at'     =>  $this->timestamp,
-            'update_at'     =>  $this->timestamp,
+            'create_at' => $this->timestamp,
+            'update_at' => $this->timestamp,
         ]));
         if (empty($bool)) {
             throw new \think\Exception("很抱歉、钱包创建失败请重试！");
         }
         // 初始化仪表盘
         $dashboard = [
-            'username'          =>  $username,
-            'power'             =>  0,
-            'team_power'        =>  0,
-            'team_count'        =>  0,
-            'machine_count'     =>  0,
-            'machine_power'     =>  0,
-            'machine_expire'    =>  0,
-            'one'               =>  0,
-            'two'               =>  0,
-            'three'             =>  0,
-            'four'              =>  0,
-            'five'              =>  0,
-            'six'               =>  0,
-            'seven'             =>  0,
-            'eight'             =>  0,
-            'lv0'               =>  0,
-            'lv1'               =>  0,
-            'lv2'               =>  0,
-            'lv3'               =>  0,
-            'lv4'               =>  0,
-            'lv5'               =>  0,
-            'lv6'               =>  0,
-            'lv7'               =>  0,
-            'lv8'               =>  0,
+            'username' => $username,
+            'power' => 0,
+            'team_power' => 0,
+            'team_count' => 0,
+            'machine_count' => 0,
+            'machine_power' => 0,
+            'machine_expire' => 0,
+            'one' => 0,
+            'two' => 0,
+            'three' => 0,
+            'four' => 0,
+            'five' => 0,
+            'six' => 0,
+            'seven' => 0,
+            'eight' => 0,
+            'lv0' => 0,
+            'lv1' => 0,
+            'lv2' => 0,
+            'lv3' => 0,
+            'lv4' => 0,
+            'lv5' => 0,
+            'lv6' => 0,
+            'lv7' => 0,
+            'lv8' => 0,
         ];
         $bool = Db::table('dashboard')->insert(array_merge($dashboard, [
-            'create_at'         =>  $this->timestamp,
-            'update_at'         =>  $this->timestamp,
+            'create_at' => $this->timestamp,
+            'update_at' => $this->timestamp,
         ]));
         if (empty($bool)) {
             throw new \think\Exception("很抱歉、初始化账户仪表盘请重试！");
@@ -245,10 +245,10 @@ class Account extends Base
         if (!empty($register_audit)) {
             // 添加记录
             $bool = Db::table('account_audit')->insert([
-                'status'    =>  0,
-                'username'  =>  $username,
-                'create_at' =>  $this->timestamp,
-                'update_at' =>  $this->timestamp,
+                'status' => 0,
+                'username' => $username,
+                'create_at' => $this->timestamp,
+                'update_at' => $this->timestamp,
             ]);
             if (empty($bool)) {
                 throw new \think\Exception("很抱歉、账户审核记录保存失败！");
@@ -271,21 +271,13 @@ class Account extends Base
         }
         // 合并数据
         $data = [
-            'account'   =>  $account,
-            'profile'   =>  $profile,
-            'wallet'    =>  $wallet,
-            'dashboard' =>  $dashboard,
+            'account' => $account,
+            'profile' => $profile,
+            'wallet' => $wallet,
+            'dashboard' => $dashboard,
         ];
         // 返回数据
         return $data;
-    }
-
-    /**
-     *  设置页
-     */
-    public function site()
-    {
-        return $this->fetch();
     }
 
     /**
@@ -354,8 +346,8 @@ class Account extends Base
             $field = $fields[$index];
             // 要更新的数据
             $data = [
-                'team_count'    =>  Db::raw('team_count' . $op . '1'),
-                $field          =>  Db::raw($field . $op . '1'),
+                'team_count' => Db::raw('team_count' . $op . '1'),
+                $field => Db::raw($field . $op . '1'),
             ];
             // Lv0
             if ($lv === true) {
@@ -363,7 +355,7 @@ class Account extends Base
             }
             // 更新仪表盘
             if (is_int($lv)) {
-                $data['lv' . $lv]    =   Db::raw('lv' . $lv . $op . '1');
+                $data['lv' . $lv] = Db::raw('lv' . $lv . $op . '1');
                 $this->dashboard($username, $data);
             }
             // 获取上级
@@ -383,8 +375,8 @@ class Account extends Base
     {
         // 仪表盘更新
         $this->dashboard($inviter, [
-            'lv' . $oldLevel    =>  Db::raw('lv' . $oldLevel . '-1'),
-            'lv' . $newLevel    =>  Db::raw('lv' . $newLevel . '+1'),
+            'lv' . $oldLevel => Db::raw('lv' . $oldLevel . '-1'),
+            'lv' . $newLevel => Db::raw('lv' . $newLevel . '+1'),
         ]);
         // 存在上级
         if ($index < 8) {
@@ -471,8 +463,8 @@ class Account extends Base
                 // 检查：下属成员
                 if (array_key_exists('member', $condition)) {
                     $lvData = [];
-                    for ($i = 0;$i <= 8; $i++) {
-                        $lvData[$i] = (int) $user['dashboard']['lv' . $i];
+                    for ($i = 0; $i <= 8; $i++) {
+                        $lvData[$i] = (int)$user['dashboard']['lv' . $i];
                     }
                     ksort($lvData);
                     foreach ($lvData as $key => $value) {
@@ -517,9 +509,9 @@ class Account extends Base
                 // 不存在这个级别的发奖记录
                 if (empty($upgradeLog)) {
                     $upgradeData = [
-                        'username'  =>  $username,
-                        'level'     =>  $level,
-                        'create_at' =>  $this->timestamp,
+                        'username' => $username,
+                        'level' => $level,
+                        'create_at' => $this->timestamp,
                     ];
                     // 存在奖励
                     if (array_key_exists('reward', $config)) {
@@ -559,7 +551,7 @@ class Account extends Base
                         if (array_key_exists('power', $reward) && $reward['power'] > 0) {
                             $upgradeData['power'] = $reward['power'];
                             $this->dashboard($username, [
-                                'power'    =>  Db::raw('power+' . $reward['power']),
+                                'power' => Db::raw('power+' . $reward['power']),
                             ]);
                         }
                     }
@@ -571,7 +563,7 @@ class Account extends Base
                 }
                 // 更新当前用户的级别
                 $this->update($username, [
-                    'type'  =>  $level
+                    'type' => $level
                 ]);
                 // 存在上级
                 if (!empty($user['account']['inviter'])) {
@@ -713,14 +705,14 @@ class Account extends Base
         } catch (\Exception $e) {
             Db::rollback();
             return json([
-                'code'      =>  555,
-                'message'   =>  $e->getMessage()
+                'code' => 555,
+                'message' => $e->getMessage()
             ]);
         }
         // 同步成功
         return json([
-            'code'      =>  200,
-            'message'   =>  'SUCCESS'
+            'code' => 200,
+            'message' => 'SUCCESS'
         ]);
     }
 
@@ -735,9 +727,9 @@ class Account extends Base
         $user = $this->instance($username, null, null, true);
         if ($req->isPost()) {
             return json([
-                'code'      =>  200,
-                'message'   =>  '恭喜您、操作成功！',
-                'data'      =>  $user
+                'code' => 200,
+                'message' => '恭喜您、操作成功！',
+                'data' => $user
             ]);
         }
         $this->assign('user', $user);
@@ -765,67 +757,67 @@ class Account extends Base
         $nickname = $req->param('nickname');
         if (empty($nickname)) {
             return json([
-                'code'      =>  501,
-                'message'   =>  '很抱歉、请填写个性昵称！'
+                'code' => 501,
+                'message' => '很抱歉、请填写个性昵称！'
             ]);
         }
         // 微信账号
         $wechat = $req->param('wechat');
         if (empty($wechat) || strlen($wechat) < 5) {
             return json([
-                'code'      =>  502,
-                'message'   =>  '很抱歉、请填写微信账号！'
+                'code' => 502,
+                'message' => '很抱歉、请填写微信账号！'
             ]);
         }
         // QQ号码
         $qq = $req->param('qq/d');
         if (empty($qq) || strlen($qq) < 5 || strlen($qq) > 11) {
             return json([
-                'code'      =>  503,
-                'message'   =>  '很抱歉、请填写QQ号码！'
+                'code' => 503,
+                'message' => '很抱歉、请填写QQ号码！'
             ]);
         }
         // 支付宝
         $alipay = $req->param('alipay');
         if (empty($alipay) || strlen($alipay) < 5) {
             return json([
-                'code'      =>  504,
-                'message'   =>  '很抱歉、请填写支付宝账号！'
+                'code' => 504,
+                'message' => '很抱歉、请填写支付宝账号！'
             ]);
         }
         // 银行名称
         $bankname = $req->param('bankname');
         if (empty($bankname) || strlen($bankname) < 2) {
             return json([
-                'code'      =>  505,
-                'message'   =>  '很抱歉、请填写银行名称！'
+                'code' => 505,
+                'message' => '很抱歉、请填写银行名称！'
             ]);
         }
         // 银行卡号
         $bankcard = $req->param('bankcard/d');
         if (empty($bankcard) || strlen($bankcard) < 6) {
             return json([
-                'code'      =>  506,
-                'message'   =>  '很抱歉、请填写银行卡号！'
+                'code' => 506,
+                'message' => '很抱歉、请填写银行卡号！'
             ]);
         }
         // 银行地址
         $bankaddress = $req->param('bankaddress');
         if (empty($bankaddress) || strlen($bankaddress) < 3) {
             return json([
-                'code'      =>  507,
-                'message'   =>  '很抱歉、请填写银行地址！'
+                'code' => 507,
+                'message' => '很抱歉、请填写银行地址！'
             ]);
         }
         // 保存数据
         $data = [
-            'nickname'      =>  $nickname,
-            'wechat'        =>  $wechat,
-            'qq'            =>  $qq,
-            'alipay'        =>  $alipay,
-            'bankname'      =>  $bankname,
-            'bankcard'      =>  $bankcard,
-            'bankaddress'   =>  $bankaddress,
+            'nickname' => $nickname,
+            'wechat' => $wechat,
+            'qq' => $qq,
+            'alipay' => $alipay,
+            'bankname' => $bankname,
+            'bankcard' => $bankcard,
+            'bankaddress' => $bankaddress,
         ];
         // 修改账户
         $this->attrs($username, $data);
@@ -833,8 +825,8 @@ class Account extends Base
         $this->log(7);
         // 返回结果
         return json([
-            'code'          =>  200,
-            'message'       =>  '恭喜您、操作成功！',
+            'code' => 200,
+            'message' => '恭喜您、操作成功！',
         ]);
     }
 
@@ -850,8 +842,8 @@ class Account extends Base
         $info = $avatarFile->validate(['ext' => 'jpg,jpeg,png'])->move(Env::get('root_path') . 'public/avatar');
         if (!$info) {
             return json([
-                'code'      =>  501,
-                'message'   =>  '很抱歉、' . $avatarFile->getError() . '！',
+                'code' => 501,
+                'message' => '很抱歉、' . $avatarFile->getError() . '！',
             ]);
         }
         // 删除之前的头像
@@ -860,13 +852,13 @@ class Account extends Base
         }
         // 修改账户
         $data = [
-            'avatar'        =>  $info->getSaveName(),
+            'avatar' => $info->getSaveName(),
         ];
         $this->update($username, $data);
         // 返回结果
         return json([
-            'code'          =>  200,
-            'message'       =>  '恭喜您、操作成功！',
+            'code' => 200,
+            'message' => '恭喜您、操作成功！',
         ]);
     }
 
@@ -878,20 +870,20 @@ class Account extends Base
         if ($req->isPost()) {
             // 验证参数
             $rule = [
-                'type'          =>  'require|number|between:1,2',
-                'password'      =>  'require|length:6,32',
-                'verify_code'   =>  'require|number|length:' . config('hello.sms.length'),
+                'type' => 'require|number|between:1,2',
+                'password' => 'require|length:6,32',
+                'verify_code' => 'require|number|length:' . config('hello.sms.length'),
             ];
-            $msg  = [
-                'type'          =>  '很抱歉、修改类型不正确！',
-                'password'      =>  '很抱歉、登录密码长度必须在6-32之间！',
-                'verify_code'   =>  '很抱歉、短信验证码格式错误！',
+            $msg = [
+                'type' => '很抱歉、修改类型不正确！',
+                'password' => '很抱歉、登录密码长度必须在6-32之间！',
+                'verify_code' => '很抱歉、短信验证码格式错误！',
             ];
             $validate = Validate::make($rule, $msg);
             if (!$validate->check($req->param())) {
                 return json([
-                    'code'      =>  501,
-                    'message'   =>  $validate->getError(),
+                    'code' => 501,
+                    'message' => $validate->getError(),
                 ]);
             }
             // 检测短信
@@ -900,8 +892,8 @@ class Account extends Base
             $Service = new Service();
             if (!$Service->smsCheck($username, $verify_code)) {
                 return json([
-                    'code'      =>  502,
-                    'message'   =>  '很抱歉、短信验证码不正确！',
+                    'code' => 502,
+                    'message' => '很抱歉、短信验证码不正确！',
                 ]);
             }
             // 根据类型修改
@@ -925,8 +917,8 @@ class Account extends Base
             }
             // 返回结果
             return json([
-                'code'          =>  200,
-                'message'       =>  '恭喜您、操作成功！',
+                'code' => 200,
+                'message' => '恭喜您、操作成功！',
             ]);
         }
         return $this->fetch();
@@ -939,6 +931,7 @@ class Account extends Base
     {
         // 用户账号
         $username = session('user.account.username');
+
         // 用户资料
         $user = $this->instance($username, null, null, true);
         $this->assign('user', $user);
@@ -946,33 +939,33 @@ class Account extends Base
         if ($req->isPost()) {
             // 验证参数
             $rule = [
-                'nickname'      =>  'require',
-                'realname'      =>  'require|chs|length:2,4',
-                'idcard'        =>  'require|idCard',
+                'nickname' => 'require',
+                'realname' => 'require|chs|length:2,4',
+                'idcard' => 'require|idCard',
             ];
-            $msg  = [
-                'nickname'      =>  '很抱歉、请填写个性昵称！',
-                'realname'      =>  '很抱歉、真实姓名不正确！',
-                'idcard'        =>  '很抱歉、身份证号码不正确！',
+            $msg = [
+                'nickname' => '很抱歉、请填写个性昵称！',
+                'realname' => '很抱歉、真实姓名不正确！',
+                'idcard' => '很抱歉、身份证号码不正确！',
             ];
             $validate = Validate::make($rule, $msg);
             if (!$validate->check($req->param())) {
                 return json([
-                    'code'      =>  501,
-                    'message'   =>  $validate->getError(),
+                    'code' => 501,
+                    'message' => $validate->getError(),
                 ]);
             }
             // 检测认证
             $authen = $user['account']['authen'];
             if ($authen == 1) {
                 return json([
-                    'code'      =>  502,
-                    'message'   =>  '很抱歉、您已认证通过请勿重复提交！',
+                    'code' => 502,
+                    'message' => '很抱歉、您已认证通过请勿重复提交！',
                 ]);
             } else if ($authen == 2) {
                 return json([
-                    'code'      =>  503,
-                    'message'   =>  '很抱歉、您的认证信息正在审核中请耐心等待！',
+                    'code' => 503,
+                    'message' => '很抱歉、您的认证信息正在审核中请耐心等待！',
                 ]);
             }
             // 注册需要审核
@@ -981,8 +974,8 @@ class Account extends Base
                 $audit_status = Db::table('account_audit')->where('username', '=', $username)->value('status');
                 if (!is_null($audit_status) && $audit_status != 1) {
                     return json([
-                        'code'      =>  520,
-                        'message'   =>  '很抱歉、您的账户尚未通过审核！',
+                        'code' => 520,
+                        'message' => '很抱歉、您的账户尚未通过审核！',
                     ]);
                 }
             }
@@ -1002,16 +995,16 @@ class Account extends Base
                         $file = $req->file('front');
                         if (empty($file)) {
                             return json([
-                                'code'      =>  510,
-                                'message'   =>  '很抱歉、请提供身份证正面图片！',
+                                'code' => 510,
+                                'message' => '很抱歉、请提供身份证正面图片！',
                             ]);
                         } else {
                             // 图片检查
                             $info = $file->validate(['ext' => 'jpg,jpeg,png'])->check();
                             if (!$info) {
                                 return json([
-                                    'code'      =>  511,
-                                    'message'   =>  '很抱歉、错误的身份证正面图片！'
+                                    'code' => 511,
+                                    'message' => '很抱歉、错误的身份证正面图片！'
                                 ]);
                             }
                             // 图片压缩
@@ -1025,16 +1018,16 @@ class Account extends Base
                         $file = $req->file('back');
                         if (empty($file)) {
                             return json([
-                                'code'      =>  512,
-                                'message'   =>  '很抱歉、请提供身份证反面图片！',
+                                'code' => 512,
+                                'message' => '很抱歉、请提供身份证反面图片！',
                             ]);
                         } else {
                             // 图片检查
                             $info = $file->validate(['ext' => 'jpg,jpeg,png'])->check();
                             if (!$info) {
                                 return json([
-                                    'code'      =>  513,
-                                    'message'   =>  '很抱歉、错误的身份证反面图片！'
+                                    'code' => 513,
+                                    'message' => '很抱歉、错误的身份证反面图片！'
                                 ]);
                             }
                             // 图片压缩
@@ -1048,16 +1041,16 @@ class Account extends Base
                         $file = $req->file('hold');
                         if (empty($file)) {
                             return json([
-                                'code'      =>  514,
-                                'message'   =>  '很抱歉、请提供手持身份证图片！',
+                                'code' => 514,
+                                'message' => '很抱歉、请提供手持身份证图片！',
                             ]);
                         } else {
                             // 图片检查
                             $info = $file->validate(['ext' => 'jpg,jpeg,png'])->check();
                             if (!$info) {
                                 return json([
-                                    'code'      =>  515,
-                                    'message'   =>  '很抱歉、错误的手持身份证图片！'
+                                    'code' => 515,
+                                    'message' => '很抱歉、错误的手持身份证图片！'
                                 ]);
                             }
                             // 图片压缩
@@ -1073,9 +1066,9 @@ class Account extends Base
                 Db::startTrans();
                 // 档案资料
                 $data = [
-                    'realname'  =>  $req->param('realname'),
-                    'idcard'    =>  $req->param('idcard'),
-                    'nickname'  =>  $req->param('nickname'),
+                    'realname' => $req->param('realname'),
+                    'idcard' => $req->param('idcard'),
+                    'nickname' => $req->param('nickname'),
                 ];
                 if (array_key_exists('certificate', $config)) {
                     $data['certificate'] = $certificate;
@@ -1086,14 +1079,14 @@ class Account extends Base
                 if ($audit === false) {
                     // 用户状态
                     $this->update($username, [
-                        'authen'    =>  1,
+                        'authen' => 1,
                     ]);
                     // 认证升级
                     $this->upgrade($username, 1);
                 } else {
                     // 用户状态
                     $this->update($username, [
-                        'authen'    =>  2,
+                        'authen' => 2,
                     ]);
                 }
                 // 保存日志
@@ -1103,14 +1096,14 @@ class Account extends Base
             } catch (\Exception $e) {
                 Db::rollback();
                 return json([
-                    'code'      =>  504,
-                    'message'   =>  $e->getMessage()
+                    'code' => 504,
+                    'message' => $e->getMessage()
                 ]);
             }
             // 返回结果
             return json([
-                'code'          =>  200,
-                'message'       =>  '恭喜您、操作成功！',
+                'code' => 200,
+                'message' => '恭喜您、操作成功！',
             ]);
         }
         // 注册需要审核
@@ -1133,27 +1126,27 @@ class Account extends Base
         if ($req->isPost()) {
             // 验证参数
             $rule = [
-                'username'      =>  'require|mobile',
-                'password'      =>  'require|length:6,32',
-                'safeword'      =>  'require|length:6,32',
-                'inviter'       =>  'require|length:6,11',
-                'verify_code'   =>  'require|number|length:' . config('hello.sms.length'),
+                'username' => 'require|mobile',
+                'password' => 'require|length:6,32',
+                'safeword' => 'require|length:6,32',
+                'inviter' => 'require|length:6,11',
+                'verify_code' => 'require|number|length:' . config('hello.sms.length'),
             ];
             if (empty(config('hello.inviter.enable'))) {
                 $rule['inviter'] = 'length:6,11';
             }
-            $msg  = [
-                'username'      =>  '很抱歉、用户账号必须是正确的手机号码！',
-                'password'      =>  '很抱歉、登录密码长度必须在6-32之间！',
-                'safeword'      =>  '很抱歉、安全密码长度必须在6-32之间！',
-                'inviter'       =>  '很抱歉、请填写正确的邀请码！',
-                'verify_code'   =>  '很抱歉、短信验证码格式错误！',
+            $msg = [
+                'username' => '很抱歉、用户账号必须是正确的手机号码！',
+                'password' => '很抱歉、登录密码长度必须在6-32之间！',
+                'safeword' => '很抱歉、安全密码长度必须在6-32之间！',
+                'inviter' => '很抱歉、请填写正确的邀请码！',
+                'verify_code' => '很抱歉、短信验证码格式错误！',
             ];
             $validate = Validate::make($rule, $msg);
             if (!$validate->check($req->param())) {
                 return json([
-                    'code'      =>  501,
-                    'message'   =>  $validate->getError(),
+                    'code' => 501,
+                    'message' => $validate->getError(),
                 ]);
             }
             // 检测短信
@@ -1162,8 +1155,8 @@ class Account extends Base
             $Service = new Service();
             if (!$Service->smsCheck($username, $verify_code)) {
                 return json([
-                    'code'      =>  502,
-                    'message'   =>  '很抱歉、短信验证码不正确！',
+                    'code' => 502,
+                    'message' => '很抱歉、短信验证码不正确！',
                 ]);
             }
             // 获取Oauth
@@ -1173,8 +1166,8 @@ class Account extends Base
             // 需要邀请码
             if (!empty(config('hello.inviter.enable')) && empty($inviter)) {
                 return json([
-                    'code'      =>  503,
-                    'message'   =>  '很抱歉、请提供邀请码！',
+                    'code' => 503,
+                    'message' => '很抱歉、请提供邀请码！',
                 ]);
             }
             // 存在邀请码
@@ -1182,8 +1175,8 @@ class Account extends Base
                 $uid = $this->value($inviter, 'uid');
                 if (empty($uid)) {
                     return json([
-                        'code'      =>  503,
-                        'message'   =>  '很抱歉、该邀请码不存在！',
+                        'code' => 503,
+                        'message' => '很抱歉、该邀请码不存在！',
                     ]);
                 }
             }
@@ -1193,8 +1186,8 @@ class Account extends Base
                 $inviter = $this->uid_to_username($inviter);
                 if (empty($inviter)) {
                     return json([
-                        'code'      =>  503,
-                        'message'   =>  '很抱歉、该邀请码不存在！',
+                        'code' => 503,
+                        'message' => '很抱歉、该邀请码不存在！',
                     ]);
                 }
             }
@@ -1213,15 +1206,15 @@ class Account extends Base
             } catch (\Exception $e) {
                 Db::rollback();
                 return json([
-                    'code'      =>  555,
-                    'message'   =>  $e->getMessage(),
+                    'code' => 555,
+                    'message' => $e->getMessage(),
                 ]);
             }
             // 返回结果
             return json([
-                'code'          =>  200,
-                'message'       =>  '恭喜您、注册成功！',
-                'data'          =>  $user,
+                'code' => 200,
+                'message' => '恭喜您、注册成功！',
+                'data' => $user,
             ]);
         }
         return $this->fetch();
@@ -1233,16 +1226,16 @@ class Account extends Base
     public function check(Request $req)
     {
         $rule = [
-            'mobile'      =>  'require|length:6,11',
+            'mobile' => 'require|length:6,11',
         ];
-        $msg  = [
-            'mobile'      =>  '很抱歉、请输入正确的邀请码！',
+        $msg = [
+            'mobile' => '很抱歉、请输入正确的邀请码！',
         ];
         $validate = Validate::make($rule, $msg);
         if (!$validate->check($req->param())) {
             return json([
-                'code'      =>  501,
-                'message'   =>  $validate->getError(),
+                'code' => 501,
+                'message' => $validate->getError(),
             ]);
         }
         $mobile = $req->param('mobile');
@@ -1252,10 +1245,10 @@ class Account extends Base
             $bool = $this->exists($mobile, true);
         }
         return json([
-            'code'          =>  200,
-            'message'       =>  '恭喜您、操作成功！',
-            'data'          =>  [
-                'exists'    =>  $bool,
+            'code' => 200,
+            'message' => '恭喜您、操作成功！',
+            'data' => [
+                'exists' => $bool,
             ]
         ]);
     }
@@ -1268,18 +1261,18 @@ class Account extends Base
         if ($req->isPost()) {
             // 验证参数
             $rule = [
-                'username'      =>  'require|mobile',
-                'password'      =>  'require|length:6,32',
+                'username' => 'require|mobile',
+                'password' => 'require|length:6,32',
             ];
-            $msg  = [
-                'username'      =>  '很抱歉、用户账号必须是正确的手机号码！',
-                'password'      =>  '很抱歉、登录密码长度必须在6-32之间！',
+            $msg = [
+                'username' => '很抱歉、用户账号必须是正确的手机号码！',
+                'password' => '很抱歉、登录密码长度必须在6-32之间！',
             ];
             $validate = Validate::make($rule, $msg);
             if (!$validate->check($req->param())) {
                 return json([
-                    'code'      =>  501,
-                    'message'   =>  $validate->getError(),
+                    'code' => 501,
+                    'message' => $validate->getError(),
                 ]);
             }
             // 登录账户
@@ -1288,11 +1281,19 @@ class Account extends Base
             $this->log(3);
             // 返回结果
             return json([
-                'code'          =>  200,
-                'message'       =>  '恭喜您、登录成功！',
-                'data'          =>  $user,
+                'code' => 200,
+                'message' => '恭喜您、登录成功！',
+                'data' => $user,
             ]);
         }
+        return $this->fetch();
+    }
+
+    /**
+     *  设置页面
+     */
+    public function site()
+    {
         return $this->fetch();
     }
 
@@ -1304,20 +1305,20 @@ class Account extends Base
         if ($req->isPost()) {
             // 验证参数
             $rule = [
-                'username'      =>  'require|mobile',
-                'password'      =>  'require|length:6,32',
-                'verify_code'   =>  'require|number|length:' . config('hello.sms.length'),
+                'username' => 'require|mobile',
+                'password' => 'require|length:6,32',
+                'verify_code' => 'require|number|length:' . config('hello.sms.length'),
             ];
-            $msg  = [
-                'username'      =>  '很抱歉、用户账号必须是正确的手机号码！',
-                'password'      =>  '很抱歉、登录密码长度必须在6-32之间！',
-                'verify_code'   =>  '很抱歉、短信验证码格式错误！',
+            $msg = [
+                'username' => '很抱歉、用户账号必须是正确的手机号码！',
+                'password' => '很抱歉、登录密码长度必须在6-32之间！',
+                'verify_code' => '很抱歉、短信验证码格式错误！',
             ];
             $validate = Validate::make($rule, $msg);
             if (!$validate->check($req->param())) {
                 return json([
-                    'code'      =>  501,
-                    'message'   =>  $validate->getError(),
+                    'code' => 501,
+                    'message' => $validate->getError(),
                 ]);
             }
             // 检测短信
@@ -1326,8 +1327,8 @@ class Account extends Base
             $Service = new Service();
             if (!$Service->smsCheck($username, $verify_code)) {
                 return json([
-                    'code'      =>  502,
-                    'message'   =>  '很抱歉、短信验证码不正确！',
+                    'code' => 502,
+                    'message' => '很抱歉、短信验证码不正确！',
                 ]);
             }
             // 修改账户
@@ -1338,8 +1339,8 @@ class Account extends Base
             $this->quit();
             // 返回结果
             return json([
-                'code'          =>  200,
-                'message'       =>  '恭喜您、操作成功！',
+                'code' => 200,
+                'message' => '恭喜您、操作成功！',
             ]);
         }
         return $this->fetch();

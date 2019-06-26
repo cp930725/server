@@ -1,4 +1,4 @@
-<?php /*a:2:{s:73:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\funding\index.html";i:1561431606;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561518650;}*/ ?>
+<?php /*a:2:{s:70:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\index\news.html";i:1561534500;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561518650;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="/assets/css/dashboard.css?3" />
     <link rel="stylesheet" href="/static/css/global.css?3" />
-    <title>创业众筹</title>
+    <title>新闻公告</title>
     <style>
         @media (max-width: 360px) {
             .icon-group {
@@ -34,30 +34,14 @@
     </style>
     
 <style>
-    .projects-image {
-        width: 118px;height: 90px;
+    * {
+        text-decoration: none;
     }
-    .projects-title {
-        font-size: 0.95rem;
-        font-weight: bold;
+    .card-title {
+        font-size: 1rem;
+        color: #202020;
     }
-    .media-body {
-        position: relative;
-    }
-    /* .projects-info {
-        position: absolute;left: 0;bottom: 0;right: 0;
-    }
-    .progress {
-        position: absolute;left: 0;bottom:2rem;right: 2.8rem;
-    } */
-    .progress-label {
-        position: absolute;right: 0;top: -.6rem;
-    }
-    .w-86 {
-        width: 86% !important;
-    }
-    a.media {
-        height: 90px;
+    a:hover {
         text-decoration: none;
     }
 </style>
@@ -136,22 +120,24 @@
         <div class="my-3 my-md-5">
             <div class="container container-padding">
                 
-<div class="d-flex mb-3">
-    <select class="form-control custom-select w-auto" name="filter">
-        <option value="all">全部</option>
-        <option value="invest">我参与的</option>
-        <option value="my">我发布的</option>
-    </select>
-    <select class="form-control custom-select w-auto ml-2" name="catalog">
-        <option value="all">类型</option>
-        <?php if(is_array(app('config')->get('hello.funding.catalog')) || app('config')->get('hello.funding.catalog') instanceof \think\Collection || app('config')->get('hello.funding.catalog') instanceof \think\Paginator): $i = 0; $__LIST__ = app('config')->get('hello.funding.catalog');if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?>
-        <option value="<?php echo htmlentities($key); ?>"><?php echo htmlentities($item); ?></option>
-        <?php endforeach; endif; else: echo "" ;endif; ?>
-    </select>
-    <a class="btn px-5 btn-success ml-auto" href="/funding/welcome.html">发起众筹</a>
-</div>
-<div class="card p-3">
-    <div class="row projects"></div>
+<div class="row">
+    <?php if(is_array($articles) || $articles instanceof \think\Collection || $articles instanceof \think\Paginator): $i = 0; $__LIST__ = $articles;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$article): $mod = ($i % 2 );++$i;?>
+    <div class="col-md-6 col-xl-4">
+        <div class="card news">
+            <a class="d-flex p-3" href="/article/<?php echo htmlentities($article['id']); ?>.html">
+                <div class="w-25"><img src="/upload/<?php echo htmlentities($article['image']); ?>" /></div>
+                <div class="w-75 pl-3">
+                    <div class="d-flex">
+                        <h3 class="card-title">
+                            <?php echo htmlentities($article['title']); ?>
+                        </h3>
+                    </div>
+                    <div class="date mt-3 text-muted"><?php echo htmlentities($article['date']); ?></div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <?php endforeach; endif; else: echo "" ;endif; ?>
 </div>
 
             </div>
@@ -188,11 +174,6 @@
 </div>
 <script type="text/javascript" src="/assets/js/require.min.js"></script>
 <script type="text/javascript" src="/static/js/global.js?3"></script>
-
-<script>
-    var frame = 'index';
-</script>
-<script src="/static/js/funding.js?2"></script>
-
+ 
 </body>
 </html>
