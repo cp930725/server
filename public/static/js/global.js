@@ -266,6 +266,9 @@ window.api = {
     ticket: {
     	check: '/ticket/check',
     },
+	index: {
+		list: '/index/list',
+	},
 };
 window.ajax = function(url, data, callback, action){
 	var option = {

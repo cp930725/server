@@ -1,270 +1,474 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
-    <meta name="renderer" content="webkit" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover, shrink-to-fit=no" />
-    <meta http-equiv="Content-Language" content="en" />
-    <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="theme-color" content="#4188c9" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <link rel="icon" href="/favicon.ico?2" type="image/x-icon" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?2" />
-    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/assets/css/dashboard.css?3" />
-    <link rel="stylesheet" href="/static/css/global.css?3" />
-    <title>{$Think.config.hello.title}</title>
-    <style>
-    .site-wrapper {
-        position: relative;
-        padding: 2em;
-        max-width: 64em;
-        margin: 0px auto;
-    }
-    .site-header {
-        background-color: #FBFBFB;
-        background-image: url(/static/image/site/header_bg.png);
-        background-size: cover;
-        background-position: center;
-        border-bottom: solid 1px #DEDEDE;
-    }
-    .site-navigation {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-    }
-    .site-navigation .left {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .site-navigation .right {
-        color: #fff;
-        font-size: .9rem;
-    }
-    .site-navigation .right a {
-        margin: 0 6px;
-        cursor: pointer;
-        color: #fff;
-        text-decoration: none;
-    }
-    .site-logo {
-        height: 40px;
-        margin-top: 7px;
-        margin-right: 30px;
-    }
-    .site-header-title {
-        font-size: 2.5em;
-        margin-bottom: 0.75rem;
-        position: relative;
-        line-height: 1.2em;
-        color: #fff;
-        margin-top: 80px;
-    }
-    .site-header-subtitle {
-        font-size: 1.3em;
-        margin-bottom: 4rem;
-        color: #fff;
-    }
-    .site-header-download {
-        height: 100px;
-    }
-    .site-header-download a {
-        display: inline-block;
-        padding: 8px 25px;
-        margin: 10px 0;
-        border: 1px solid rgba(255,255,255,0.8);
-        color: rgba(255,255,255,0.8);
-        text-decoration: none;
-    }
-    .site-header-download a.ios {
-        margin-right: 20px;
-    }
-    .site-header-banner {
-        position: absolute;
-        right: 12%;
-        bottom: -94px;
-        width: 21%;
-    }
-    .site-section-even {
-        background-color: #ffffff;
-        border-bottom: solid 1px #DEDEDE;
-        border-top: solid 1px #DEDEDE;
-    }
-    .site-flex {
-        padding: 4rem 2rem;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .site-section-image {
-        display: inline;
-        width: 56%;
-    }
-    @media (max-width: 768px) {
-        .site-flex {
-            padding: 1rem 2rem;
-        }
-        .site-section-image {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-        }
-    }
-    .site-section-image-left {
-        width: 48%;
-        position: absolute;
-        left: 2rem;
-        bottom: -68%;
-    }
-    .site-section-text {
-        padding-left: 2em;
-        padding-right: 1em;
-    }
-    .site-section-text ul {
-        list-style: none;
-        margin-left: -1em;
-        margin-top: 2em;
-    }
-    .site-section-text ul li {
-        margin-bottom: 1em;
-    }
-    .site-section-text ul li:before {
-        content: "• ";
-        color: #336FB2;
-        padding-right: .5em;
-    }
-    .site-section-title {
-        font-size: 2em;
-        margin-bottom: 1rem;
-        font-weight: normal;
-        color: #222;
-        line-height: 1.2;
-    }
-    .site-section-subtitle {
-        margin: 2rem auto;
-    }
-    </style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="Bingo One page parallax responsive HTML Template ">
+
+	<meta name="author" content="">
+
+	<title>Bingo | Responsive Multipurpose Parallax HTML5 Template</title>
+
+	<!-- Mobile Specific Meta
+      ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+
+	<!-- CSS
+    ================================================== -->
+	<!-- RS5.0 Main Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/css/settings.css">
+	<!-- RS5.0 Layers and Navigation Styles -->
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/css/navigation.css">
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="/static/plugins/revo-slider/css/navigation.css">
+	<!-- Themefisher Icon font -->
+	<link rel="stylesheet" href="/static/plugins/themefisher-font/style.css">
+	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.min.css">
+	<!--  &lt;!&ndash; Lightbox.min css &ndash;&gt;-->
+	<link rel="stylesheet" href="/static/plugins/lightbox2/dist/css/lightbox.min.css">
+	<!--  &lt;!&ndash; Slick Carousel &ndash;&gt;-->
+	<link rel="stylesheet" href="/static/plugins/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="/static/plugins/slick-carousel/slick/slick-theme.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="/static/css/style.css">
+
+
+	<!-- Colors -->
+	<link rel="stylesheet" type="text/css" href="/static/css/colors/green.css" title="green">
+	<link rel="stylesheet" type="text/css" href="/static/css/colors/red.css" title="light-red">
+	<link rel="stylesheet" type="text/css" href="/static/css/colors/blue.css" title="blue">
+	<link rel="stylesheet" type="text/css" href="/static/css/colors/light-blue.css" title="light-blue">
+	<link rel="stylesheet" type="text/css" href="/static/css/colors/yellow.css" title="yellow">
+	<link rel="stylesheet" type="text/css" href="/static/css/colors/light-green.css" title="light-green">
+
+
 </head>
 
-<body>
-<!-- content -->
-<div class="site">
-    <div class="site-header">
-        <div class="site-wrapper">
-            <div class="site-navigation">
-                <div class="left">
-                    <img src="/static/image/logo_w.png" alt="" class="site-logo" />
-                </div>
-                <div class="right">
-                    <a href="/signin.html">登录</a>
-                    /
-                    <a href="/signup.html">注册</a>
-                </div>
-            </div>
-            <div class="site-header-title">一键托管通兑全球</div>
-            <div class="site-header-subtitle">国际金融巨鳄联袂共识“百倍币”</div>
-            <div class="site-header-download">
-                {notempty name="Think.config.hello.appurl"}
-                    <a href="{$Think.config.hello.appurl}" target="_blank" class="ios">iPhone 下载</a>
-                    <a href="{$Think.config.hello.appurl}" target="_blank" class="android">Android 下载</a>
-                {else /}
-                    <a href="javascript:;" data-toggle="tooltip" data-original-title="敬请期待" class="ios">iPhone 下载</a>
-                    <a href="javascript:;" data-toggle="tooltip" data-original-title="敬请期待" class="android">Android 下载</a>
-                {/notempty}
-            </div>
-            <img src="/static/image/site/p1.png" class="site-header-banner d-none d-md-block" />
-        </div>
-    </div>
-    <div class="site-section">
-        <div class="site-wrapper d-block d-md-none">
-            <div class="site-section-title">市场交易</div>
-            <div class="site-section-subtitle mb-0">每天实时价格曲线图，一键式快速提交订单，人性友好的交易流程</div>
-        </div>
-        <div class="site-wrapper site-flex">
-            <img class="site-section-image" src="/static/image/site/p2.png" />
-            <div class="site-section-text d-none d-md-block">
-                <div class="site-section-title">市场交易</div>
-                <ul>
-                    <li>每天实时价格曲线图，一目了然</li>
-                    <li>一键式快速提交订单，方便快捷</li>
-                    <li>人性友好的交易流程，卖买无忧</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="site-section site-section-even">
-        <div class="site-wrapper" style="text-align: center;">
-            <div class="site-section-title">托管引擎</div>
-            <div class="site-section-subtitle">一键购买托管引擎，交易即挖矿，实时关注引擎动态，开启躺赚模式。</div>
-            <img class="site-section-image" src="/static/image/site/p3.png" />
-        </div>
-    </div>
-    <div class="site-section d-block d-md-none">
-        <div class="site-wrapper">
-            <div class="site-section-title">宽客联盟</div>
-            <div class="site-section-subtitle">组建自己的宽客联盟，分享联盟收益，算力加成，二层收益躺赚“睡后”收入</div>
-            <img class="site-section-image" src="/static/image/site/p4.png" />
-        </div>
-    </div>
-    <div class="site-section d-none d-md-block">
-        <div class="site-wrapper site-flex o-hidden" style="padding: 6rem 2rem;">
-            <img class="site-section-image site-section-image-left" src="/static/image/site/p4.png" />
-            <div class="site-section-text d-none d-md-block" style="margin-left: 50%;">
-                <div class="site-section-title">宽客联盟</div>
-                <ul>
-                    <li>引擎收益：团队成员收矿分红</li>
-                    <li>交易收益：团队成员交易分红</li>
-                    <li>全球收益：全球伙伴交易分红</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="site-section site-section-even">
-        <div class="site-wrapper" style="text-align: center;">
-            <div class="site-section-title">关于我们</div>
-            <div class="site-section-subtitle">
-                <p>我们是国内最早从事区块链的领导者</p>
-                <p>专注于未来数字世界的探索和研发，驱动行业的技术发展</p>
-            </div>
-        </div>
-    </div>
-    <div class="site-section">
-        <div class="site-wrapper">
-            <div class="site-navigation">
-                <div class="left d-none d-md-block">
-                    <img src="/static/image/logo.png" alt="" class="site-logo" />
-                </div>
-                <div class="right" style="color: #333;">Copyright © 2018 <a href="#" style="color: #333;">{$Think.config.hello.title}</a>. &#28304;&#30721;&#26469;&#33258;&#23567;&#23627;&#28304;&#30721;&#119;&#119;&#119;&#46;&#109;&#50;&#49;&#51;&#46;&#99;&#110;</div>
-            </div>
+<body id="body">
+
+
+
+
+
+
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation navbar navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<!-- responsive nav button -->
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- /responsive nav button -->
+			<!-- logo -->
+			<a class="navbar-brand logo" href="javascript:;">
+				<img class="logo-default" src="/static/image/index/logo.png" alt="logo" />
+				<img class="logo-white" src="/static/image/index/logo-white.png" alt="logo" />
+			</a>
+			<!-- /logo -->
+		</div>
+		<!-- main nav -->
+		<nav class="collapse navbar-collapse navbar-right daoh">
+			<ul id="nav" class="nav navbar-nav menu">
+				<li><a href="#index"><h3>首页</h3></a></li>
+				<li><a href="#pay"><h3>荣耀支付</h3></a></li>
+				<li><a href="#ggfb"><h3>GGFB</h3></a></li>
+				<li><a href="#app"><h3>应用场景</h3></a></li>
+				<li><a href="#cooperate"><h3>全球合作</h3></a></li>
+			</ul>
+		</nav>
+		<!-- /main nav -->
+	</div>
+</header>
+<!--
+End Fixed Navigation
+==================================== -->
+
+
+
+
+<!--
+Welcome Slider
+==================================== -->
+
+<section class="hero-area" id="index">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="block">
+					<h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s">澳大利亚区块链技术联盟<br>（GGFB）</h1>
+					<p class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+						澳大利亚金融业巨头组建区块链联盟GGFB，是总部位于墨尔本的区块链创业公司，其核心职能是制定银行业区块链技术开发的行业标准，以及探讨实践用例，并建立银行业的区块链组织。</p>
+					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
+						<li>
+							<a href="/static/#" class="btn btn-main">Android下载</a>
+						</li>
+						<li>
+							<a href="/static/#" class="btn btn-main">IOS下载</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--
+Start About Section
+==================================== -->
+<section class="service-2 section" id="pay">
+	<div class="container">
+		<div class="row">
+			<!-- section title -->
+			<div class="title text-center">
+				<h2>荣耀支付</h2>
+				<p>由比特币 Core 开发团队成员 Nicolas Dorier 开发，与全球 20+家主流数字货币交易所及 100+家数字货币矿场合作，形成全球全行业通用的数字货币结算承兑平台 </p>
+				<div class="border"></div>
+			</div>
+			<!-- /section title -->
+
+			<div class="col-md-4 text-center">
+				<img src="/static/image/index/about/member.jpg" class="inline-block" alt="">
+			</div>
+			<div class="col-md-8">
+				<div class="row text-center">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="service-item">
+							<i class="tf-ion-ios-alarm-outline"></i>
+							<h4>迅速实现数字货币的自由支付与兑换</h4>
+
+						</div>
+					</div><!-- END COL -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="service-item">
+							<i class="tf-ion-ios-briefcase-outline"></i>
+							<h4>最安全快捷的数字货币加密入金通道</h4>
+						</div>
+					</div><!-- END COL -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="service-item">
+							<i class="tf-ion-ios-email-outline"></i>
+							<h4>开放式API端口轻松接入各种应用场景</h4>
+						</div>
+					</div><!-- END COL -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="service-item">
+							<i class="tf-ion-ios-locked-outline"></i>
+							<h4>独有的实时清算引擎完成数字货币的双向承兑</h4>
+						</div>
+					</div><!-- END COL -->
+				</div>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+
+<!--
+Start About Section
+==================================== -->
+<section class="about-2 section" id="ggfb">
+	<div class="container">
+		<div class="row">
+
+			<!-- section title -->
+			<div class="title text-center">
+				<h2>GGFB特性</h2>
+				<div class="border"></div>
+			</div>
+			<!-- /section title -->
+
+			<div class="col-md-6">
+				<img src="/static/image/index/about/about-2.png" class="img-responsive" alt="">
+			</div>
+			<div class="col-md-6">
+				<ul class="checklist">
+					<li>目标清晰，致力于全球第三方支付。</li>
+					<li>币值相对稳定，具有较高的安全度。</li>
+					<li>具有稳定的用户群体及广泛的应用场景。</li>
+					<li>实时对接线下实物资产，持续保值增值。</li>
+					<li>具有更高的稳健量化增值可能性。</li>
+				</ul>
+			</div>
+		</div> <!-- End row -->
+	</div> <!-- End container -->
+</section> <!-- End section -->
+
+<!--
+Start Call To Action
+==================================== -->
+<!-- <section class="call-to-action section">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h2>Let's Create Something Together</h2>
+            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit.</p>
+            <a href="/static/" class="btn btn-main">Contact Us</a>
         </div>
     </div>
 </div>
-<!-- script -->
-<script type="text/javascript" src="/assets/js/require.min.js"></script>
-<script type="text/javascript" src="/static/js/global.js?3"></script>
+</section>  -->
+
+
+
+
+<!--
+    Start Blog Section
+    =========================================== -->
+
+<section class="blog" id="app">
+	<div class="container">
+		<div class="row">
+
+			<!-- section title -->
+			<div class="title text-center ">
+				<h2> 应用场景</h2>
+				<div class="border"></div>
+
+			</div>
+			<!-- /section title -->
+			<!-- single blog post -->
+			<article class="col-md-4 col-sm-6 col-xs-12 clearfix ">
+				<div class="post-item">
+					<div class="media-wrapper">
+						<img src="/static/image/index/a1.jpg" alt="amazing caves coverimage" class="img-responsive">
+					</div>
+
+					<div class="content">
+						<h3><a href="/static/single-post.html">金融行业</a></h3>
+						<p>为用户提供更强大的管理和参与合约的方法。GGFB定位于支付领域的未来发展，致力于为全球用户提供手续便捷、成本低廉的国内及跨境第三方支付，此外包括子货币、金融衍生品、对冲合约、储蓄钱包、遗嘱及一些全面雇佣合约等其他金融应用。
+						</p>
+					</div>
+				</div>
+			</article>
+			<!-- /single blog post -->
+
+			<!-- single blog post -->
+			<article class="col-md-4 col-sm-6 col-xs-12 ">
+				<div class="post-item">
+					<div class="media-wrapper">
+						<img src="/static/image/index/a2.jpg" alt="amazing caves coverimage" class="img-responsive">
+					</div>
+
+					<div class="content">
+						<h3>半金融行业</h3>
+						<p>这里有金钱的存在但也有很大比重的非金钱因素，一个完美的例子是为解决计算问题而设的自我强制悬赏。</p>
+					</div>
+				</div>
+			</article>
+			<!-- end single blog post -->
+
+			<!-- single blog post -->
+			<article class="col-md-4 col-sm-6 col-xs-12 ">
+				<div class="post-item">
+					<div class="media-wrapper">
+						<img src="/static/image/index/a3.jpg" alt="amazing caves coverimage" class="img-responsive">
+					</div>
+
+					<div class="content">
+						<h3>非金融行业</h3>
+						<p>非金融企业是指主要从事市场货物生产和提供非金融市场服务的常住企业，它主要包括各类法人企业。所有非金融企业归并在一起，就形成非金融企业部门。</p>
+					</div>
+				</div>
+			</article>
+			<!-- end single blog post -->
+
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end section -->
+
+
+
+<!--
+    Start Counter Section
+    ==================================== -->
+
+<section class="counter-wrapper section-sm" style="background-color: #f6f6f6" id="coopreate">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="title">
+					<h2>全球合作商</h2>
+
+				</div>
+			</div>
+			<!-- first count item -->
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item">
+					<div>
+						<span class="counter">网易</span>
+					</div>
+					<!-- <h3>Happy Clients</h3> -->
+				</div>
+			</div>
+			<!-- end first count item -->
+
+			<!-- second count item -->
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item">
+					<div>
+						<span class="counter">阿里巴巴</span>
+					</div>
+					<!-- <h3>Projects completed</h3> -->
+				</div>
+			</div>
+			<!-- end second count item -->
+
+			<!-- third count item -->
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item">
+					<div>
+						<span class="counter">腾讯</span>
+					</div>
+					<!-- <h3>Positive feedback</h3> -->
+
+				</div>
+			</div>
+			<!-- end third count item -->
+
+			<!-- fourth count item -->
+			<div class="col-md-3 col-sm-6 col-xs-6 text-center ">
+				<div class="counters-item kill-border">
+					<div>
+						<span class="counter">百度</span>
+					</div>
+					<!-- <h3>Cups of Coffee</h3> -->
+				</div>
+			</div>
+			<!-- end fourth count item -->
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+</section> <!-- end section -->
+
+
+
+
+
+
+<footer id="footer" class="bg-one">
+
+	<div class="footer-bottom">
+		<h5>Copyright 2016. All rights reserved.</h5>
+		<h6>Design and Developed by Themefisher. More Templates <a href="/static/http://www.cssmoban.com/" target="_blank"
+																   title="模板之家">模板之家</a> - Collect from <a href="/static/http://www.cssmoban.com/" title="网页模板"
+																										   target="_blank">网页模板</a></h6>
+	</div>
+</footer>
+
+
+<!-- end Footer Area
+========================================== -->
+
+<!-- 
+Essential Scripts
+=====================================-->
+
+<!-- Main jQuery -->
+<script src="/static/plugins/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.1 -->
+<script src="/static/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- Parallax -->
+<script src="/static/plugins/parallax/jquery.parallax-1.1.3.js"></script>
+<!-- lightbox -->
+<script src="/static/plugins/lightbox2/dist/js/lightbox.min.js"></script>
+<!-- slick Carousel -->
+<script src="/static/plugins/slick-carousel/slick/slick.min.js"></script>
+<!-- Portfolio Filtering -->
+<script src="/static/plugins/mixitup/dist/mixitup.min.js"></script>
+<!-- Smooth Scroll js -->
+<script src="/static/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/jquery.themepunch.revolution.min.js"></script>
+<!-- Custom js -->
+<script src="/static/js/script.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+(Load Extensions only on Local File Systems ! 
+The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="/static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js"></script>
+
 <script>
-if (typeof(isApp) != 'undefined' && isApp) {
-    window.location.href = api.account.home;
-}
+
+	/* https://learn.jquery.com/using-jquery-core/document-ready/ */
+	jQuery(document).ready(function() {
+
+		/* initialize the slider based on the Slider's ID attribute */
+		jQuery('#rev_slider_1').show().revolution({
+
+			/* options are 'auto', 'fullwidth' or 'fullscreen' */
+			sliderLayout: 'fullscreen',
+
+			/* basic navigation arrows and bullets */
+			navigation: {
+
+				arrows: {
+					style:"zeus",
+					enable:true,
+					hide_onmobile:true,
+					hide_under:600,
+					hide_onleave:true,
+					hide_delay:200,
+					hide_delay_mobile:1200,
+					tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+					left: {
+						h_align:"left",
+						v_align:"center",
+						h_offset:30,
+						v_offset:0
+					},
+					right: {
+						h_align:"right",
+						v_align:"center",
+						h_offset:30,
+						v_offset:0
+					}
+				}
+				,
+				bullets: {
+					enable:false,
+					hide_onmobile:true,
+					hide_under:600,
+					style:"metis",
+					hide_onleave:true,
+					hide_delay:200,
+					hide_delay_mobile:1200,
+					direction:"horizontal",
+					h_align:"center",
+					v_align:"bottom",
+					h_offset:0,
+					v_offset:30,
+					space:5,
+					tmp:'<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
+				}
+			}
+		});
+	});
 </script>
+
 </body>
 </html>

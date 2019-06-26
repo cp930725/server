@@ -10,9 +10,10 @@
 // +----------------------------------------------------------------------
 
 // 网站首页
-Route::get('/', 'index/index');
-Route::get('/index', 'index/index');
+Route::get('/', 'index/index/index');
+Route::get('/index', 'index/index/index');
 Route::get('/news', 'index/news');
+Route::get('/book', 'index/book');
 Route::get('/article/:id', 'index/article');
 Route::rule('/contact', 'index/contact', 'GET|POST');
 Route::rule('/ueditor', 'ueditor/index', 'GET|POST');
@@ -30,7 +31,6 @@ Route::group('service', function(){
 	// 发送短信
 	Route::post('sms', 'service/sms');
 });
-
 
 // 注册账号
 Route::rule('signup', 'account/signup', 'GET|POST');
@@ -50,6 +50,8 @@ Route::group('account', function(){
 	Route::rule('profile', 'account/profile', 'GET|POST');
 	// 编辑
 	Route::post('edit', 'account/edit');
+	// 设置
+	Route::get('site', 'account/site');
 	// 实名
 	Route::rule('authen', 'account/authen', 'GET|POST');
 	// 密码
@@ -222,6 +224,13 @@ Route::group('funding', function(){
 	Route::post('invest', 'funding/invest');
 	// 结束
 	Route::post('over', 'funding/over');
+});
+
+// 首页众筹列表
+Route::post('index/list', 'api/index/list');
+
+Route::group('shop', function (){
+    Route::post('list', 'shop/list');
 });
 
 // 票券接口

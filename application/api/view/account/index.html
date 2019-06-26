@@ -1,0 +1,141 @@
+{extend name="common/default"}
+{block name="title"}{$Think.config.hello.title}{/block}
+{block name="style"}
+{/block}
+{block name="container"}
+<div class="row row-cards mt-3">
+    <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center">
+                        <span class="stamp stamp-md bg-blue mr-3">
+                            <i class="fa fa-bitcoin"></i>
+                        </span>
+                        <div>
+                            <h4 class="m-0"><a href="/wallet/record.html">{$user.wallet.money|money_show}</a></h4>
+                            <small class="text-muted">可用{$Think.config.hello.unit}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center">
+                        <span class="stamp stamp-md bg-gray mr-3">
+                            <i class="fa fa-bitcoin"></i>
+                        </span>
+                        <div>
+                            <h4 class="m-0"><a href="/wallet/record.html?c=2">{$user.wallet.deposit|money_show}</a></h4>
+                            <small class="text-muted">冻结{$Think.config.hello.unit}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {notempty name="Think.config.hello.score.enable"}
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center">
+                        <span class="stamp stamp-md bg-azure mr-3">
+                            <i class="fa fa-diamond"></i>
+                        </span>
+                        <div>
+                            <h4 class="m-0"><a href="/wallet/record.html?c=2">{$user.wallet.score|money_show}</a></h4>
+                            <small class="text-muted">可用{$Think.config.hello.score.unit}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center">
+                        <span class="stamp stamp-md bg-gray mr-3">
+                            <i class="fa fa-diamond"></i>
+                        </span>
+                        <div>
+                            <h4 class="m-0"><a href="/wallet/record.html?c=2">{$user.wallet.score_deposit|money_show}</a></h4>
+                            <small class="text-muted">冻结{$Think.config.hello.score.unit}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/notempty}
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center">
+                        <span class="stamp stamp-md bg-green mr-3">
+                            <i class="fa fa-star"></i>
+                        </span>
+                        <div>
+                            <h4 class="m-0"><a href="/team.html">0.000000</a></h4>
+                            <small class="text-muted">{$Think.config.hello.cash}余额</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-12">
+                <div class="card p-3">
+                    <div class="d-flex align-items-center">
+                        <span class="stamp stamp-md bg-green mr-3">
+                            <i class="fa fa-users"></i>
+                        </span>
+                        <div>
+                            <h4 class="m-0"><a href="/team.html">{$user.dashboard.team_count}</a></h4>
+                            <small class="text-muted">总人数</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+            <div class="list-group quick-operation">
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/wallet/record">
+                    <i class="fe fe-slack text-muted"></i>
+                    <span class="ml-3">资产明细</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/imtoken">
+                    <i class="fe fe-aperture text-muted"></i>
+                    <span class="ml-3">充币提币</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/transfer">
+                    <i class="fe fe-anchor text-muted"></i>
+                    <span class="ml-3">内部转账</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/account/authen.html">
+                    <i class="fe fe-shield text-muted"></i>
+                    <span class="ml-3">实名认证</span>
+                    <span class="text-muted ml-auto">
+                    {switch user.account.authen}
+                        {case 1}<i class="fe fe-check text-green"></i>{/case}
+                        {case 2}<span class="status-icon bg-warning"></span>审核中{/case}
+                        {case 3}<span class="status-icon bg-red"></span>被拒绝{/case}
+                        {default /}
+                            <i class="fe fe-chevron-right"></i>
+                    {/switch}
+                    </span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/account/site">
+                    <i class="fa fa-cog text-muted"></i>
+                    <span class="ml-3">设置</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/team/inviter">
+                    <i class="fe fe-flag text-muted"></i>
+                    <span class="ml-3">宽客招募</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/signout.html">
+                    <i class="fe fe-log-out text-muted"></i>
+                    <span class="ml-3">退出登录</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

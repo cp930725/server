@@ -1,0 +1,34 @@
+{extend name="common/default"}
+{block name="title"}{$Think.config.hello.title}{/block}
+{block name="style"}
+{/block}
+{block name="container"}
+<div class="row row-cards mt-3">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="card">
+            <div class="list-group quick-operation">
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/account/profile.html">
+                    <i class="fe fe-user text-muted"></i>
+                    <span class="ml-3">个人资料</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/account/reset.html">
+                    <i class="fe fe-lock text-muted"></i>
+                    <span class="ml-3">修改密码</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/help.html">
+                    <i class="fe fe-help-circle text-muted"></i>
+                    <span class="ml-3">关于我们</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+                <a class="list-group-item d-flex justify-content-between align-items-center" href="/account">
+                    <i class="fe fe-log-out text-muted"></i>
+                    <span class="ml-3">返回</span>
+                    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

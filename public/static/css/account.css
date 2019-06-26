@@ -1,0 +1,201 @@
+.padding{
+	padding: 0;
+}
+.margin{
+	margin: 0; 
+}
+.pd_bottom_15{
+	padding-bottom:15px; 
+}
+.zuo{
+	float: left;
+}
+.you{
+	float: right;
+}
+.border{
+	border:0;
+}
+.user_title{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background:#006699;
+	padding:0;
+	float: left;
+	position: fixed;
+	top: 0%;
+	z-index: 10086;
+}
+.user_title h4 {
+	color:#fff;
+	font-family:黑体;
+}
+
+.user_top{
+	height: 100px;
+	background: url('../image/personal/back.jpg');
+	background-size:100% 100%;
+}
+.user_head{
+	margin: -15px 0 0 0;
+	border-radius: 15px 15px 0 0;
+	height: 100px;
+	overflow: hidden;
+
+}
+.user_head_bottom{
+	margin: -15px 0 0 0;
+	height: 107px;
+	background: #DDDDDD;
+	border-radius:15px 15px 0 0;
+	padding: 10px 10px 0 10px;
+}
+.user_kuangji_yunx{
+	background: #fff;
+	border-radius: 5px;
+	padding:10px 10px 0 10px;
+	position: absolute;
+	left: 5% ;
+	right:;
+	top:15% ;
+	bottom:;
+}
+.user_kuangji_yunx p{
+	line-height: 40px;
+
+}
+.user_kuangji_guoq{
+	background: #fff;
+	border-radius: 5px;
+	padding:10px 10px 0 10px;
+	position: absolute;
+	left: 53%;
+	right: ;
+	top: 15%;
+	bottom: ;
+}
+.user_kuangji_guoq p{
+	line-height: 40px;
+
+}
+.user_head_bottom_kuangji{
+	margin: 0 10px 0 0;
+	width: 40px;
+	height: 40px;
+	background: #5eba00;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+}
+.user_head_bottom_kuangji img{
+	width: 100%;
+	height: 100%;
+
+}
+.user_head_bottom_guoq{
+	margin: 0 10px 0 0;
+	width: 40px;
+	height: 40px;
+	background: #f1c40f;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+}
+.user_head_bottom_guoq img{
+	width: 100%;
+	height: 100%;
+
+}
+.user_toux{
+	margin: 15px 0 0 0;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	overflow: hidden;
+	float: left;
+}
+.user_name{
+	font-family: 黑体;
+	line-height: 90px;
+	font-size: 24px;
+}
+.user_name p{
+	color: #fff;
+}
+.user_dengl{
+	line-height: 90px;
+	background: #006699;
+	padding: 2px;
+	color: #fff;
+	border-radius: 3px;
+}
+.user_neir{
+	background: #fff;
+	border-radius: 15px 15px 0 0;
+	margin: -15px 0 0 0;
+}
+.user_list{
+	margin: 20px 0 0 0;
+
+}
+.user_list ul{
+	padding: 0;
+
+}
+.user_list ul li{
+	text-decoration: none;
+	list-style: none;
+	height: 50px; 
+	line-height: 50px;
+	font-size: 14px;
+	border-bottom: 0.05px solid #999999;
+	padding: 0 0 0 30px;
+
+}
+.user_list ul li i{
+	line-height: 50px;
+	float: right;
+	color: #CCCCCC;
+
+}
+.user_list ul li a{
+	text-decoration: none;
+	color: #000;
+
+}
+.user_list ul li a img{
+	width: 22px;
+	height: 22px;  
+	margin: 0 3px 0 0;  
+}
+#user_zuo{
+	width: 50%;
+	float:left;
+	border-right: 0;
+	border-radius:0; 
+}
+#user_you{
+	width: 50%;
+	float: right;
+	border-left:0; 
+	border-radius: 0;
+}
+#user_none{
+	border-radius:0;
+}
+.nav1 {
+}
+.nav1 ul {
+	width:100%;
+}
+.nav1 ul li {
+	float: left;
+	background-color:#006699;
+}
+.nav1 ul li a {
+	color:#fff;font-size:14px;
+}
+#kong{
+	display: block;
+	width: 100%;
+	height: 60px;
+}

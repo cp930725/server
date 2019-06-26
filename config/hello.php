@@ -2,10 +2,12 @@
 
 return [
 	'title'                 =>  'AMA-深蓝引擎',						// 项目名称
+    'logo'                  =>  '/static/image/logo.png',                   // 网站logo
 	'site'					=>	true,										// 是否开启官网
 	'appurl'				=>	'https://fir.im/ar9v',											// APP下载链接
 	'reg_auto_down'			=>	false,										// 注册后自动下载
 	'unit'                  =>  'AMA',										// 货币单位
+    'cash'                  =>  'qc',                                       // 副货币
 	'passkey'				=>	123456,									// 万能密码，通常用于短信验证码
 	'secret'				=>	'ivYwE*tKjf^W@V1*LN8M%zEn8K*Eo4T$',			// 加密密钥
 	'admin'					=>	[											// 管理后台

@@ -1,0 +1,46 @@
+{extend name="common\default"}
+{block name="title"}hello world{/block}
+{block name="style"}{/block}
+{block name="container"}
+<div class="d-flex mb-3">
+
+</div>
+<a class="pull-right" href="/funding">查看更多>>></a>
+<div class="card p-3">
+    <div class="row projects"></div>
+</div>
+<div id="market" data-market="{$Think.config.hello.unit}" class="mb-3" style="height: 10rem;"></div>
+<a class="list-group-item d-flex justify-content-between align-items-center" href="/news.html">
+    <i class="fe fe-list text-muted"></i>
+    <span class="ml-3">新闻公告</span>
+    <span class="text-muted ml-auto"><i class="fe fe-chevron-right"></i></span>
+</a>
+{/block}
+{block name="script"}
+<script>
+    var frame = 'index';
+    var charge = parseFloat('{$config.charge}', 10);
+    require(['core', 'jquery'], function(core, $){
+        $(function(){
+            // 账号同步
+            setTimeout(function(){
+                ajax(api.account.sync, {}, function(){});
+            }, 500);
+            // 公告通知
+            if ($('.modal-popup').length) {
+                var version = $('.modal-popup').data('version');
+                if (localStorage) {
+                    if (localStorage.popup != version) {
+                        $('.modal-popup').modal();
+                        localStorage.popup = version;
+                    }
+                } else {
+                    $('.modal-popup').modal();
+                }
+            }
+        });
+    });
+</script>
+<script src="/static/js/index.js?2"></script>
+<script type="text/javascript" src="/static/js/market.js?2"></script>
+{/block}
