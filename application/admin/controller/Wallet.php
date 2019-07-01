@@ -358,7 +358,7 @@ class Wallet extends Base
             // 开启事务
             Db::startTrans();
             // im对象
-            $im = new \app\index\controller\Imtoken();
+            $im = new \app\api\controller\Imtoken();
             $im->agree($id);
             // 提交事务
             Db::commit();
@@ -370,6 +370,39 @@ class Wallet extends Base
         // 操作成功
         $this->success('恭喜您、操作成功！');
         exit;
+    }
+
+    public function team_power_percentage($username, $price, $index = 1)
+    {
+        // 账户对象
+        $ac = new Account();
+        // 我的资料
+        $user = $ac->value($username, ['type', 'inviter']);
+        // 我能拿到的佣金
+        $percentages = config('hello.level.' . $user['type'] . '.percentage');
+        if (!empty($percentages)) {
+            // 具体的佣金
+            $percentage = $price * $percentages;
+
+            // 如果存在佣金
+            if ($percentage > 0) {
+                // 我的资料
+                $userIns = $ac->instance($username);
+                // 增加佣金
+                (new Wallet())->change($username, 29, [
+                    1   =>  [
+                        $userIns['wallet']['money'],
+                        $commission,
+                        $userIns['wallet']['money'] + $commission
+                    ],
+                ]);
+            }
+        }
+
+        // 获取上级的信息
+        if ($index <= 8 && !empty($user['inviter'])) {
+            $this->team_power_commission($user['inviter'], $power, $price, $index + 1);
+        }
     }
 
     /**
@@ -387,7 +420,7 @@ class Wallet extends Base
             // 开启事务
             Db::startTrans();
             // im对象
-            $im = new \app\index\controller\Imtoken();
+            $im = new \app\api\controller\Imtoken();
             $im->refuse($id);
             // 提交事务
             Db::commit();

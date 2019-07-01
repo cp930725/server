@@ -7,7 +7,6 @@ namespace app\api\controller;
 use think\Db;
 use think\facade\Env;
 use think\Request;
-use app\index\controller\Base;
 
 class Market extends Base
 {

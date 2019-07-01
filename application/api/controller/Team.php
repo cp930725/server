@@ -7,7 +7,6 @@ use Endroid\QrCode\QrCode;
 use think\Db;
 use think\facade\Env;
 use think\Request;
-use app\index\controller\Base;
 
 class Team extends Base
 {

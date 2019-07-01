@@ -300,7 +300,8 @@ window.ajax = function(url, data, callback, action){
 	}
 	$.ajax(option);
 };
-window.unit = 'AMA';
+window.unit = 'GGFB';
+window.cash = 'QC';
 window.score_unit = '积分';
 window.safetime_label = '30分钟';
 window.safetime = 60 * 30;

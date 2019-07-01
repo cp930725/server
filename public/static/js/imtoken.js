@@ -9,6 +9,14 @@ var compute = function(currency){
 		return charge * currency;
 	}
 }
+var exchange = function (currency) {
+	currency = currency || 1;
+	if (duihuan <= 0) {
+		return 0;
+	} else {
+		return currency / duihuan;
+	}
+}
 var getData = function(){
 	var param = {
 		page: page,
@@ -64,6 +72,9 @@ require(['jquery'], function($){
 			if (type == 'recharge') {
 				$('.card-form .form-title').text('在线充值');
 				$('.table-title').text('充值记录');
+			} else if (type == 'exchange') {
+				$('.card-form .form-title').text('在线兑换');
+				$('.table-title').text('兑换记录');
 			} else {
 				$('.card-form .form-title').text('申请提现');
 				$('.table-title').text('提现记录');
@@ -76,6 +87,11 @@ require(['jquery'], function($){
 		$('.withdraw input[name=number]').on('input', function(){
 			var number = $(this).val();
 			$('.charge').text(compute(number) + unit);
+		});
+		// 可兑换金额
+		$('.exchange input[name=number]').on('input', function(){
+			var number = $(this).val();
+			$('.duihuan').text(exchange(number) + unit);
 		});
 		// 提交申请
 		$('.card-form .btn-post').on('click', function(){
@@ -109,6 +125,22 @@ require(['jquery'], function($){
 				}
 				$('.recharge input[name=safeword]').removeClass('state-invalid');
 				param.safeword = $('.recharge input[name=safeword]').val();
+			} else if (type == 'exchange') {
+				var number = $('.exchange input[name=number]').val();
+				if (number == '' || isNaN(number) || number <= 0) {
+					$('.exchange input[name=number]').addClass('state-invalid').focus();
+					return false;
+				}
+				$('.exchange input[name=number]').removeClass('state-invalid');
+				param.number = number;
+
+				var safeword = $('.exchange input[name=safeword]').val();
+				if (safeword == '' || safeword.length < 6) {
+					$('.exchange input[name=safeword]').addClass('state-invalid').focus();
+					return false;
+				}
+				$('.exchange input[name=safeword]').removeClass('state-invalid');
+				param.safeword = $('.exchange input[name=safeword]').val();
 			} else {
 				// 钱包地址
 				var imtoken_code = $('.withdraw input[name=imtoken_code]').val();

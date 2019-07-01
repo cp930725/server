@@ -67,7 +67,7 @@ require(['jquery'], function($){
 				} else {
 					localStorage.hello_account = JSON.stringify(res.data);
 					var from = param('from');
-					window.location.href = from ? from : api.account.home;
+					window.location.href = from ? from : '/api';
 				}
 			});
 			return false;

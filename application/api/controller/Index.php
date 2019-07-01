@@ -3,7 +3,7 @@
 
 namespace app\api\controller;
 
-use app\index\controller\Base;
+
 use think\Db;
 use think\Request;
 
@@ -14,6 +14,9 @@ class Index extends Base
      */
     public function index()
     {
+        if (empty(session('user'))){
+            return $this->redirect('/signin');
+        }
         $config = config('hello.trade');
         $this->assign('config', $config);
 

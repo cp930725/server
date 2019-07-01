@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="572a8052-71e0-4d93-be6c-066869365ec8" name="test" url="http://156.238.167.126">
+        <fileTransfer host="156.238.167.126" port="22" rootFolder="/www/wwwroot/ggfb.ggfb.cc" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -147,6 +147,12 @@ class Market extends Base
         }
         // 获取价格
         $price = $req->param('price');
+
+        session('price', null);
+        if (empty(session('price'))) {
+            session('price', $price);
+        }
+
         if (empty($price)) {
             $this->error('很抱歉、请设置价格！');
             exit;

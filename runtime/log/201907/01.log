@@ -1,0 +1,1573 @@
+---------------------------------------------------------------
+[ 2019-07-01T10:47:08+08:00 ] 127.0.0.1 GET /
+[ info ] myshop1.com/ [运行时间：0.044000s][吞吐率：22.73req/s] [内存消耗：812.65kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:09+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/css/settings.css
+[ info ] myshop1.com/static/plugins/revo-slider/css/settings.css [运行时间：0.053000s][吞吐率：18.87req/s] [内存消耗：608.94kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:09+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/jquery.themepunch.tools.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/jquery.themepunch.tools.min.js [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：608.98kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:09+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:09+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js [运行时间：0.028000s][吞吐率：35.71req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:09+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：609.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js [运行时间：0.027000s][吞吐率：37.04req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/css/layers.css
+[ info ] myshop1.com/static/plugins/revo-slider/css/layers.css [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：608.94kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css
+[ info ] myshop1.com/static/plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css [运行时间：0.033000s][吞吐率：30.30req/s] [内存消耗：609.06kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/css/navigation.css
+[ info ] myshop1.com/static/plugins/revo-slider/css/navigation.css [运行时间：0.040000s][吞吐率：25.00req/s] [内存消耗：608.94kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
+[ info ] myshop1.com/static/plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：609.07kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/jquery.themepunch.revolution.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/jquery.themepunch.revolution.min.js [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：609.01kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/jquery.themepunch.tools.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/jquery.themepunch.tools.min.js [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：608.98kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/jquery.themepunch.revolution.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/jquery.themepunch.revolution.min.js [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：609.01kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:10+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：609.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:11+08:00 ] 127.0.0.1 GET /img/favicon.png
+[ info ] myshop1.com/img/favicon.png [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：608.60kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:47:14+08:00 ] 127.0.0.1 GET /api
+[ info ] myshop1.com/api [运行时间：0.107600s][吞吐率：9.29req/s] [内存消耗：1,683.74kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.029600s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.003000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:47:14+08:00 ] 127.0.0.1 GET /signin
+[ info ] myshop1.com/signin [运行时间：0.053000s][吞吐率：18.87req/s] [内存消耗：1,792.82kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signin',
+  'route' => 'account/signin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'purpose' => 'prefetch',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\account\signin.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:47:15+08:00 ] 127.0.0.1 GET /signin
+[ info ] myshop1.com/signin [运行时间：0.070000s][吞吐率：14.29req/s] [内存消耗：1,792.55kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signin',
+  'route' => 'account/signin',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\account\signin.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:47:21+08:00 ] 127.0.0.1 GET /signup.html
+[ info ] myshop1.com/signup.html [运行时间：0.055000s][吞吐率：18.18req/s] [内存消耗：1,846.68kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signup',
+  'route' => 'account/signup',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\account\signup.html [ array (
+  0 => 'platform',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:47:21+08:00 ] 127.0.0.1 GET /service/captcha.html
+[ info ] myshop1.com/service/captcha.html [运行时间：0.086000s][吞吐率：11.63req/s] [内存消耗：1,735.82kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'service/captcha',
+  'route' => 'service/captcha',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:47:23+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.069000s][吞吐率：14.49req/s] [内存消耗：1,792.09kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13323456789',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `username` = '13323456789' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:47:25+08:00 ] 127.0.0.1 POST /service/captcha
+[ info ] myshop1.com/service/captcha [运行时间：0.052000s][吞吐率：19.23req/s] [内存消耗：1,740.80kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'service/captcha',
+  'route' => 'service/captcha',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'number' => '664',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:10+08:00 ] 127.0.0.1 GET /
+[ info ] myshop1.com/ [运行时间：0.028000s][吞吐率：35.71req/s] [内存消耗：812.82kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'index/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/css/layers.css
+[ info ] myshop1.com/static/plugins/revo-slider/css/layers.css [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：608.94kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css
+[ info ] myshop1.com/static/plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css [运行时间：0.027000s][吞吐率：37.04req/s] [内存消耗：609.07kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/css/navigation.css
+[ info ] myshop1.com/static/plugins/revo-slider/css/navigation.css [运行时间：0.141000s][吞吐率：7.09req/s] [内存消耗：608.94kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/css/settings.css
+[ info ] myshop1.com/static/plugins/revo-slider/css/settings.css [运行时间：0.112000s][吞吐率：8.93req/s] [内存消耗：608.94kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/jquery.themepunch.tools.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/jquery.themepunch.tools.min.js [运行时间：0.070000s][吞吐率：14.29req/s] [内存消耗：608.98kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js [运行时间：0.037000s][吞吐率：27.03req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js [运行时间：0.039000s][吞吐率：25.64req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js [运行时间：0.136000s][吞吐率：7.35req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js [运行时间：0.020000s][吞吐率：50.00req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js [运行时间：0.043000s][吞吐率：23.26req/s] [内存消耗：609.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js [运行时间：0.043000s][吞吐率：23.26req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:11+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js [运行时间：0.032000s][吞吐率：31.25req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css
+[ info ] myshop1.com/static/plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css [运行时间：0.028000s][吞吐率：35.71req/s] [内存消耗：609.06kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/jquery.themepunch.tools.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/jquery.themepunch.tools.min.js [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：608.98kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/jquery.themepunch.revolution.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/jquery.themepunch.revolution.min.js [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：609.01kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.actions.min.js [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js [运行时间：0.024000s][吞吐率：41.67req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js [运行时间：0.023000s][吞吐率：43.48req/s] [内存消耗：609.02kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js [运行时间：0.021000s][吞吐率：47.62req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.migration.min.js [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:12+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:13+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js [运行时间：0.017000s][吞吐率：58.82req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:13+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js [运行时间：0.018000s][吞吐率：55.56req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:13+08:00 ] 127.0.0.1 GET /static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js
+[ info ] myshop1.com/static/plugins/revo-slider/js/extensions/revolution.extension.video.min.js [运行时间：0.019000s][吞吐率：52.63req/s] [内存消耗：609.00kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:17+08:00 ] 127.0.0.1 GET /admin/login.html?from=http%3A%2F%2Fmyshop1.com%2Fapi%2Fuser
+[ info ] myshop1.com/admin/login.html?from=http%3A%2F%2Fmyshop1.com%2Fapi%2Fuser [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：796.45kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://myshop1.com/api/user',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\admin\view\staff\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:28+08:00 ] 127.0.0.1 POST /admin/login.html?from=http%3A%2F%2Fmyshop1.com%2Fapi%2Fuser
+[ info ] myshop1.com/admin/login.html?from=http%3A%2F%2Fmyshop1.com%2Fapi%2Fuser [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：858.70kb] [文件加载：62]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/login',
+  'route' => 'admin/staff/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/admin/login.html?from=http%3A%2F%2Fmyshop1.com%2Fapi%2Fuser',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://myshop1.com',
+  'cache-control' => 'max-age=0',
+  'content-length' => '36',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'from' => 'http://myshop1.com/api/user',
+  'username' => 'admin',
+  'password' => '123456789789',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-07-01T10:48:28+08:00 ] 127.0.0.1 GET /admin.html
+[ info ] myshop1.com/admin.html [运行时间：0.125000s][吞吐率：8.00req/s] [内存消耗：1,707.67kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin',
+  'route' => 'admin/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/admin/login.html?from=http%3A%2F%2Fmyshop1.com%2Fapi%2Fuser',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\admin\view\index\index.html [ array (
+  0 => 'totalPeople',
+  1 => 'noAuthen',
+  2 => 'onAuthen',
+  3 => 'totalTrade',
+  4 => 'buyTrade',
+  5 => 'sellTrade',
+  6 => 'monthOrdersDay',
+  7 => 'monthOrdersNumber',
+  8 => 'newOrders',
+  9 => 'statuses',
+  10 => 'buyCount',
+  11 => 'sellCount',
+  12 => 'buyNumber',
+  13 => 'buyMoney',
+  14 => 'sellNumber',
+  15 => 'sellMoney',
+  16 => 'store',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT authen, count(id) AS number FROM `account` GROUP BY `authen` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `trade` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT type, count(id) AS number FROM `trade` GROUP BY `type` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT DATE_FORMAT(`create_at`, "%Y-%m-%d") AS date, COUNT(id) AS number FROM `trade` WHERE  `create_at` >= '2019-06-01' GROUP BY `date` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`username`,`p`.`nickname`,`t`.`tid`,`t`.`status`,`t`.`number`,`t`.`price` FROM `trade` `t` INNER JOIN `profile` `p` ON `p`.`username`=`t`.`owner` ORDER BY `t`.`create_at` DESC LIMIT 5 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT type, status, COUNT(id) AS count, SUM(number) number, SUM(price * number) price FROM `trade` GROUP BY `type`,`status` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `store` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT * FROM `store` WHERE  `catalog` = 1 ORDER BY `income` DESC [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `machine` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` < `income` GROUP BY `product` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT product, COUNT(id) AS count FROM `machine` WHERE  `profit` >= `income` GROUP BY `product` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clock` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` WHERE  `c`.`create_at` > '2019-07-01' GROUP BY `m`.`product` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT m.product, SUM(c.money) profit FROM `clock` `c` INNER JOIN `machine` `m` ON `m`.`mid`=`c`.`mid` INNER JOIN `store` `s` ON `s`.`id`=`m`.`product` GROUP BY `m`.`product` [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:32+08:00 ] 127.0.0.1 GET /admin/account.html
+[ info ] myshop1.com/admin/account.html [运行时间：0.073000s][吞吐率：13.70req/s] [内存消耗：1,787.82kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'admin/account',
+  'route' => 'admin/account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/admin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\admin\view\account\index.html [ array (
+  0 => 'users',
+  1 => 'compares',
+  2 => 'sorts',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT `p`.`avatar`,`p`.`idcard`,`p`.`nickname`,`a`.`create_at`,`a`.`username`,`a`.`type`,`a`.`status`,`a`.`authen`,`a`.`inviter`,`w`.`money`,`w`.`deposit`,`w`.`score`,`w`.`score_deposit` FROM `account` `a` INNER JOIN `profile` `p` ON `p`.`username`=`a`.`username` INNER JOIN `wallet` `w` ON `w`.`username`=`a`.`username` ORDER BY `w`.`money` DESC,`a`.`update_at` DESC LIMIT 0,20 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:44+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.054000s][吞吐率：18.52req/s] [内存消耗：1,792.22kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '8',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'U',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:45+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.054000s][吞吐率：18.52req/s] [内存消耗：1,792.22kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '9',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'U4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:45+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.059000s][吞吐率：16.95req/s] [内存消耗：1,792.23kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '10',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'U43',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:46+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.055000s][吞吐率：18.18req/s] [内存消耗：1,792.23kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '11',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'U432',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:46+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.048000s][吞吐率：20.83req/s] [内存消耗：1,792.23kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '12',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'U4323',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:46+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.069000s][吞吐率：14.49req/s] [内存消耗：1,792.24kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '13',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'U43234',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `uid` = 'U43234' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:47+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.064000s][吞吐率：15.63req/s] [内存消耗：1,792.31kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '14',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => 'U432348',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `uid` = 'U432348' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:48+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：1,792.44kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '13323456789',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.018000s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `username` = '13323456789' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:57+08:00 ] 127.0.0.1 POST /account/check
+[ info ] myshop1.com/account/check [运行时间：0.066000s][吞吐率：15.15req/s] [内存消耗：1,792.37kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account/check',
+  'route' => 'account/check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '18',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15823456789',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:48:59+08:00 ] 127.0.0.1 POST /service/sms_check
+[ info ] myshop1.com/service/sms_check [运行时间：0.076000s][吞吐率：13.16req/s] [内存消耗：1,693.37kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'service/sms_check',
+  'route' => 'service/sms_check',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '37',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'mobile' => '15823456789',
+  'verify_code' => '123456',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:49:10+08:00 ] 127.0.0.1 POST /signup
+[ info ] myshop1.com/signup [运行时间：0.210000s][吞吐率：4.76req/s] [内存消耗：1,854.20kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'signup',
+  'route' => 'account/signup',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get|post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'authentication' => 'undefined',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://myshop1.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '87',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => '15823456789',
+  'verify_code' => '123456',
+  'inviter' => 'U432348',
+  'password' => '123456',
+  'safeword' => '123456',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT `username` FROM `account` WHERE  `uid` = 'U432348' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `account` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `uuid` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] SELECT * FROM `uuid` WHERE  `id` = 'H618092' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `uuid` (`id` , `type`) VALUES ('H618092' , 1) [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `account` (`uid` , `type` , `status` , `username` , `authen` , `inviter` , `password` , `safeword` , `create_at` , `update_at`) VALUES ('H618092' , 0 , 1 , '15823456789' , 0 , '13323456789' , 'e67b36ddd09a671967939cfe2b0255cf' , 'e67b36ddd09a671967939cfe2b0255cf' , '2019-07-01 10:49:10' , '2019-07-01 10:49:10') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.024000s ]
+[ sql ] [ SQL ] INSERT INTO `profile` (`username` , `nickname` , `avatar` , `wechat` , `qq` , `alipay` , `realname` , `idcard` , `authen_reason` , `bankname` , `bankcard` , `bankaddress` , `create_at` , `update_at`) VALUES ('15823456789' , 'H618092' , NULL , '15823456789' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2019-07-01 10:49:10' , '2019-07-01 10:49:10') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] INSERT INTO `wallet` (`username` , `money` , `deposit` , `score` , `score_deposit` , `spend` , `profit` , `team_profit` , `bonus` , `trade` , `sell` , `buy` , `create_at` , `update_at`) VALUES ('15823456789' , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , '2019-07-01 10:49:10' , '2019-07-01 10:49:10') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.019000s ]
+[ sql ] [ SQL ] INSERT INTO `dashboard` (`username` , `power` , `team_power` , `team_count` , `machine_count` , `machine_power` , `machine_expire` , `one` , `two` , `three` , `four` , `five` , `six` , `seven` , `eight` , `lv0` , `lv1` , `lv2` , `lv3` , `lv4` , `lv5` , `lv6` , `lv7` , `lv8` , `create_at` , `update_at`) VALUES ('15823456789' , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , '2019-07-01 10:49:10' , '2019-07-01 10:49:10') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `dashboard`  SET `team_count` = team_count+1 , `one` = one+1 , `lv0` = lv0+1 , `update_at` = '2019-07-01 10:49:10'  WHERE  `username` = '13323456789' [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `inviter` FROM `account` WHERE  `username` = '13323456789' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '13323456789' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '13323456789' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`cash`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '13323456789' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '13323456789' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(`id`) AS tp_count FROM `account` WHERE  `inviter` = '13323456789'  AND `authen` = 1 LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT type, COUNT(id) AS count FROM `account` WHERE  `inviter` = '13323456789' GROUP BY `type` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `log` [ RunTime:0.021000s ]
+[ sql ] [ SQL ] INSERT INTO `log` (`username` , `type` , `text` , `ip` , `ua` , `create_at`) VALUES ('15823456789' , 1 , '来自于推荐人13323456789' , '127.0.0.1' , 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36' , '2019-07-01 10:49:10') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:49:10+08:00 ] 127.0.0.1 GET /account.html
+[ info ] myshop1.com/account.html [运行时间：0.224000s][吞吐率：4.46req/s] [内存消耗：1,837.58kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/signup.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\account\index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'news',
+  3 => 'user',
+  4 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.020000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.028000s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.025000s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`cash`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.023000s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.026000s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2019-07-01 10:49:10' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2019-07-01T10:49:13+08:00 ] 127.0.0.1 GET /account
+[ info ] myshop1.com/account [运行时间：0.147000s][吞吐率：6.80req/s] [内存消耗：1,837.78kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\test2\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'account',
+  'route' => 'account/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__utma=234852098.409503409.1561016638.1561016638.1561016638.1; __utmz=234852098.1561016638.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); PHPSESSID=38ikrav810l0c6djge9d3fiqb2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://myshop1.com/account.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'myshop1.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+  'expire' => 86400,
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\account\index.html [ array (
+  0 => 'platform',
+  1 => 'group',
+  2 => 'news',
+  3 => 'user',
+  4 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=m213.cn;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `token` = 'hello.group' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `config` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `account` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `uid`,`type`,`status`,`username`,`authen`,`inviter` FROM `account` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `profile` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `username`,`nickname`,`avatar`,`wechat`,`qq`,`alipay`,`realname`,`idcard`,`certificate`,`authen_reason`,`bankname`,`bankcard`,`bankaddress`,`phone`,`province`,`city`,`county` FROM `profile` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wallet` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT `username`,`money`,`deposit`,`cash`,`score`,`score_deposit`,`spend`,`profit`,`team_profit`,`bonus`,`trade`,`sell`,`buy`,`ts_in`,`ts_out` FROM `wallet` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dashboard` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `username`,`power`,`team_power`,`team_count`,`authen`,`machine_count`,`machine_power`,`machine_expire`,`one`,`two`,`three`,`four`,`five`,`six`,`seven`,`eight`,`lv0`,`lv1`,`lv2`,`lv3`,`lv4`,`lv5`,`lv6`,`lv7`,`lv8` FROM `dashboard` WHERE  `username` = '15823456789' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `id`,`image`,`title`,`date` FROM `article` WHERE  `type` <> 8  AND `date` <= '2019-07-01 10:49:13' ORDER BY `top` DESC,`sort` DESC,`date` DESC LIMIT 5 [ RunTime:0.000000s ]

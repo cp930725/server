@@ -3,152 +3,14 @@
 
 namespace app\api\controller;
 
+
 use think\Db;
 use think\facade\Env;
-use think\Request;
 
-class Imtoken extends Base
+class Recharge extends Base
 {
-
-    // +----------------------------------------------------------------------
-    // | 私有函数
-    // +----------------------------------------------------------------------
-
     /**
-     * 生成TID
-     */
-    public function generateTID()
-    {
-        $prefix = chr(mt_rand(65, 90));
-        do {
-            $number = mt_rand(100000000, 999999999);
-            $mid = $prefix . $number;
-        } while (!empty(Db::table('uuid')->where('id', '=', $mid)->find()));
-        $bool = Db::table('uuid')->insert(['id' => $mid, 'type' => 5]);
-        if (empty($bool)) {
-            throw new \think\Exception("很抱歉、订单编号生成失败！");
-        }
-        return $mid;
-    }
-
-    // +----------------------------------------------------------------------
-    // | 内部方法
-    // +----------------------------------------------------------------------
-
-    /**
-     * 充值
-     */
-    public function agree($tid)
-    {
-        // 查询订单
-        $order = Db::table('imtoken')->where('tid', '=', $tid)->find();
-        if (empty($order)) {
-            throw new \think\Exception("很抱歉、该订单不存在！");
-        }
-        if ($order['status'] != 2) {
-            throw new \think\Exception("很抱歉、错误的订单状态！");
-        }
-        // 用户账号
-        $username = $order['username'];
-        $user = (new Account())->instance($username);
-        if (empty($user)) {
-            throw new \think\Exception("很抱歉、用户不存在！");
-        }
-        if (empty($user['account']['status'])) {
-            throw new \think\Exception("很抱歉、用户已被冻结！");
-        }
-        // 资金对象
-        $wl = new Wallet();
-        // 如果是充值订单
-        if ($order['type'] == 1) {
-            // 给用户加钱
-            $wl->change($username, 15, [
-                5   =>  [
-                    $user['wallet']['cash'],
-                    $order['number'],
-                    $user['wallet']['cash'] + $order['number'],
-                ]
-            ], [
-                'number'    =>  $order['number'],
-            ]);
-        } else {
-            // 扣除用户的冻结资金
-            $total = $order['number'] + $order['charge'];
-            $wl->change($username, 16, [
-                2   =>  [
-                    $user['wallet']['deposit'],
-                    -($total),
-                    $user['wallet']['deposit'] - $total,
-                ]
-            ]);
-        }
-        // 更改状态
-        $bool = Db::table('imtoken')->where('tid', '=', $tid)->update([
-            'status'    =>  1,
-            'update_at' =>  $this->timestamp
-        ]);
-        if (empty($bool)) {
-            throw new \think\Exception("很抱歉、更改订单状态失败！");
-        }
-    }
-
-    /**
-     * 提现
-     */
-    public function refuse($tid)
-    {
-        // 查询订单
-        $order = Db::table('imtoken')->where('tid', '=', $tid)->find();
-        if (empty($order)) {
-            throw new \think\Exception("很抱歉、该订单不存在！");
-        }
-        if ($order['status'] != 2) {
-            throw new \think\Exception("很抱歉、错误的订单状态！");
-        }
-        // 用户账号
-        $username = $order['username'];
-        $user = (new Account())->instance($username);
-        if (empty($user)) {
-            throw new \think\Exception("很抱歉、用户不存在！");
-        }
-        if (empty($user['account']['status'])) {
-            throw new \think\Exception("很抱歉、用户已被冻结！");
-        }
-        // 资金对象
-        $wl = new Wallet();
-        // 如果是提现订单
-        if ($order['type'] == 2) {
-            // 调整资金
-            $total = $order['number'] + $order['charge'];
-            $wl->change($username, 17, [
-                1   =>  [
-                    $user['wallet']['money'],
-                    $total,
-                    $user['wallet']['money'] + $total,
-                ],
-                2   =>  [
-                    $user['wallet']['deposit'],
-                    -($total),
-                    $user['wallet']['deposit'] - $total,
-                ],
-            ]);
-        }
-        // 更改状态
-        $bool = Db::table('imtoken')->where('tid', '=', $tid)->update([
-            'status'    =>  0,
-            'update_at' =>  $this->timestamp
-        ]);
-        if (empty($bool)) {
-            throw new \think\Exception("很抱歉、更改订单状态失败！");
-        }
-    }
-
-    // +----------------------------------------------------------------------
-    // | 对外接口
-    // +----------------------------------------------------------------------
-
-    /**
-     * imtoken首页
+     * 充值页面
      */
     public function index()
     {
@@ -164,21 +26,14 @@ class Imtoken extends Base
         } else {
             $config = json_decode($config, true);
         }
-        // 暂未开启
-        if (empty($config['enable'])) {
-            $this->error('很抱歉、系统暂未开启该服务！');
-            exit;
-        }
-        // 显示页面
         $this->assign('config', $config);
-        $this->assign('price', session('price'));
         return $this->fetch();
     }
 
     /**
-     * 提交申请
+     *  提交申请
      */
-    public function post(Request $req)
+    public function post()
     {
         try {
             // 当前用户
@@ -208,7 +63,7 @@ class Imtoken extends Base
             }
             // 申请类型
             $type = $req->param('type');
-            if (!in_array($type, ['recharge', 'withdraw', 'exchange'])) {
+            if (!in_array($type, ['recharge', 'withdraw'])) {
                 return json([
                     'code'      =>  501,
                     'message'   =>  '很抱歉、错误的请求类型！'
@@ -291,9 +146,6 @@ class Imtoken extends Base
             $charge = $config['charge'];
             if ($type == 'recharge') {
                 $charge = 0;
-            } elseif ($type == 'exchange'){
-                $price = session('price');
-                $charge = money($number / $price);
             } else {
                 if ($charge <= 0) {
                     $charge = 0;
@@ -341,27 +193,6 @@ class Imtoken extends Base
                     'address'   =>  null,
                     'qrcode'    =>  null,
                     'certificate'    =>  $certificate,
-                    'create_at' =>  $this->timestamp,
-                    'update_at' =>  $this->timestamp,
-                ]);
-            } elseif ($type == 'exchange'){
-
-                if ($user['wallet']['cash'] < $number) {
-                    return json([
-                        'code'      =>  508,
-                        'message'   =>  '很抱歉、您的资金不足！'
-                    ]);
-                }
-                $bool = Db::table('imtoken')->insert([
-                    'tid'       =>  $this->generateTID(),
-                    'type'      =>  3,
-                    'status'    =>  1,
-                    'username'  =>  $username,
-                    'number'    =>  $number,
-                    'charge'    =>  $charge,
-                    'address'   =>  null,
-                    'qrcode'    =>  null,
-                    'certificate'    =>  null,
                     'create_at' =>  $this->timestamp,
                     'update_at' =>  $this->timestamp,
                 ]);
@@ -415,23 +246,6 @@ class Imtoken extends Base
                 ]);
                 // 操作日志
                 $this->log(65);
-            } elseif ($type == 'exchange') {
-                $wl = new Wallet();
-
-                $wl->change($username, 99, [
-                    5   =>  [
-                        $user['wallet']['cash'],
-                        -($number),
-                        $user['wallet']['cash'] - $number,
-                    ],
-                    1   =>  [
-                        $user['wallet']['money'],
-                        $charge,
-                        $user['wallet']['money'] + $charge,
-                    ]
-                ]);
-
-                $this->log(68);
             } else {
                 // 操作日志
                 $this->log(64);
@@ -449,39 +263,6 @@ class Imtoken extends Base
         return json([
             'code'      =>  200,
             'message'   =>  '恭喜您、操作成功！'
-        ]);
-    }
-
-    /**
-     * 列表记录
-     */
-    public function search(Request $req)
-    {
-        // 自己的账号
-        $username = session('user.account.username');
-        // 分页数据
-        $page = $req->param('page/d', 1);
-        $size = $req->param('size/d', 20);
-        $offset = $page - 1 < 0 ? 0 : ($page - 1) * $size;
-        // 查询对象
-        $query = Db::table('imtoken')->field('tid AS id, status, number, charge, update_at AS date')->where('username', '=', $username);
-        // 按类型分
-        if ($req->param('type') == 'recharge') {
-            // 查充值
-            $query->where('type', '=', 1);
-        } elseif ($req->param('type') == 'exchange') {
-            $query->where('type', '=', 5);
-        } else {
-            // 查提现
-            $query->where('type', '=', 2);
-        }
-        // 查询数据
-        $data = $query->limit($offset, $size)->order('update_at DESC')->select();
-        // 返回数据
-        return json([
-            'code'      =>  200,
-            'message'   =>  '恭喜您、操作成功！',
-            'data'      =>  $data
         ]);
     }
 }

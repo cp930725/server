@@ -3,7 +3,6 @@
 
 namespace app\api\controller;
 
-use app\index\controller\Base;
 use think\Db;
 use think\facade\Env;
 use think\Request;

@@ -58,8 +58,10 @@
                             <a href="javascript:;" class="nav-link pr-0 leading-none" data-toggle="dropdown">
                                 <span class="avatar me-avatar" style="background-image: url({:avatar($Think.session.user.profile.avatar, $Think.session.user.profile.idcard)});"><span class="avatar-status bg-green"></span></span>
                                 <span class="ml-2 d-none d-lg-block">
+                                    {if !empty($Think.session.user)}
                                     <span class="text-default">{$Think.session.user.profile.nickname}</span>
                                     <small class="text-muted d-block mt-1">{$Think.config.hello.level[$Think.session.user.account.type]['name']}</small>
+                                    {/if}
                                 </span>
                             </a>
                         </div>

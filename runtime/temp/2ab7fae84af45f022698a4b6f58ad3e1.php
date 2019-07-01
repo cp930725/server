@@ -1,4 +1,4 @@
-<?php /*a:2:{s:71:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\index\index.html";i:1561453385;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561518650;}*/ ?>
+<?php /*a:2:{s:71:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\index\index.html";i:1561453385;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561620505;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -55,8 +55,10 @@
                             <a href="javascript:;" class="nav-link pr-0 leading-none" data-toggle="dropdown">
                                 <span class="avatar me-avatar" style="background-image: url(<?php echo avatar(app('session')->get('user.profile.avatar'), app('session')->get('user.profile.idcard')); ?>);"><span class="avatar-status bg-green"></span></span>
                                 <span class="ml-2 d-none d-lg-block">
+                                    <?php if(!empty(app('session')->get('user'))): ?>
                                     <span class="text-default"><?php echo htmlentities(app('session')->get('user.profile.nickname')); ?></span>
                                     <small class="text-muted d-block mt-1"><?php echo htmlentities(app('config')->get('hello.level')[app('session')->get('user.account.type')]['name']); ?></small>
+                                    <?php endif; ?>
                                 </span>
                             </a>
                         </div>

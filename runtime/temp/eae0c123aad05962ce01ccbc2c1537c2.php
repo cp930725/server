@@ -1,4 +1,4 @@
-<?php /*a:2:{s:73:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\imtoken\index.html";i:1561528696;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561518650;}*/ ?>
+<?php /*a:2:{s:73:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\imtoken\index.html";i:1561633378;s:74:"D:\phpstudy\PHPTutorial\WWW\test2\application\api\view\common\default.html";i:1561620505;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -64,8 +64,10 @@
                             <a href="javascript:;" class="nav-link pr-0 leading-none" data-toggle="dropdown">
                                 <span class="avatar me-avatar" style="background-image: url(<?php echo avatar(app('session')->get('user.profile.avatar'), app('session')->get('user.profile.idcard')); ?>);"><span class="avatar-status bg-green"></span></span>
                                 <span class="ml-2 d-none d-lg-block">
+                                    <?php if(!empty(app('session')->get('user'))): ?>
                                     <span class="text-default"><?php echo htmlentities(app('session')->get('user.profile.nickname')); ?></span>
                                     <small class="text-muted d-block mt-1"><?php echo htmlentities(app('config')->get('hello.level')[app('session')->get('user.account.type')]['name']); ?></small>
+                                    <?php endif; ?>
                                 </span>
                             </a>
                         </div>
@@ -122,6 +124,7 @@
         <div class="card-options">
             <button class="btn btn-primary btn-sm mr-2" type="button" data-type="recharge">充值</button>
             <button class="btn btn-secondary btn-sm mr-2" type="button" data-type="withdraw">提现</button>
+            <button class="btn btn-secondary btn-sm mr-2" type="button" data-type="exchange">兑换</button>
         </div>
     </div>
     <div class="card-body">
@@ -232,6 +235,37 @@
                     </div>
                 </div>
             </div>
+            <div hidden class="dimmer-content exchange">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="form-label">货币数量</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="0" name="number" />
+                                <span class="input-group-append" id="basic-addon2">
+                                    <span class="input-group-text"><?php echo htmlentities(app('config')->get('hello.unit')); ?></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="form-group">
+                            <label class="form-label">安全密码</label>
+                            <div class="input-group">
+                                <input type="password" class="form-control" placeholder="******" name="safeword" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="small text-muted mt-2">
+                        可兑换：<span class="duihuan">0<?php echo htmlentities(app('config')->get('hello.unit')); ?></span>
+                    </div>
+                    <div class="ml-auto text-right">
+                        <button type="submit" class="btn btn-primary btn-submit btn-post">提交申请</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -292,6 +326,7 @@
 
 <script type="text/javascript">
 var charge = parseFloat('<?php echo htmlentities((isset($config['charge']) && ($config['charge'] !== '')?$config['charge']:0)); ?>');
+var duihuan = parseFloat('<?php echo htmlentities($price); ?>|default=0.2}');
 </script>
 <script type="text/javascript" src="/static/js/imtoken.js"></script>
 

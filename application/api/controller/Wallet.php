@@ -6,7 +6,6 @@ namespace app\api\controller;
 
 use think\Db;
 use think\Request;
-use app\index\controller\Base;
 
 class Wallet extends Base
 {
